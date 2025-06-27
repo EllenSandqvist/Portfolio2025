@@ -1,0 +1,26 @@
+/* .details {
+
+} */
+
+.summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+/* tar bort default-pil i webkit-browsers */
+.summary::-webkit-details-marker {
+  display: none;
+}
+
+.show_more {
+  display: block;
+  margin-top: 0.2em;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.content {
+  margin-top: 1em;
+  padding-left: 1em;
+  border-left: 3px dotted var(--accent-outline);
+}

@@ -1,0 +1,72 @@
+.header {
+  position: relative;
+  width: 100%;
+  background-color: var(--primary-dark);
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.header_title {
+  font-weight: 500;
+  margin: 0.5rem;
+  letter-spacing: 0.15rem;
+  display: inline-block;
+  border-right: 0.1em solid #fff;
+}
+
+.typing {
+  animation: blink 0.5s step-end infinite alternate;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.header_nav {
+  display: none;
+  background-color: var(--secondary-grey);
+}
+
+.intro_text {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.header_name {
+  font-size: 1.7rem;
+  line-height: 1;
+}
+
+.header_work {
+  font-size: 1rem;
+  background-color: var(--accent-color);
+  display: inline-block;
+  color: var(--primary-dark);
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+}
+
+/* For full screen: */
+/* .img_div {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-auto-rows: auto;
+} */
+
+/* .profile_img {
+  grid-column: 2/3;
+} */
+
+.nav_ul {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 1rem 0;
+}

@@ -1,0 +1,48 @@
+.footer {
+  background-color: var(--primary-dark);
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  padding: 1.5em;
+  gap: 1em;
+}
+
+.heading_container {
+  line-height: 1;
+}
+
+.footer h2 {
+  line-height: 1.1;
+  font-size: 1.8rem;
+}
+
+.textSpan {
+  background-color: var(--accent-color);
+  color: var(--primary-dark);
+  padding: 0 0.1rem;
+  font-size: 1.2rem;
+}
+
+.mail {
+  display: flex;
+  align-items: start;
+  gap: 0.3rem;
+  line-height: 1;
+  font-size: 1.1rem;
+}
+
+.socialLinksDiv {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  min-width: 48px;
+  min-height: 48px;
+}
