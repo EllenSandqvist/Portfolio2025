@@ -5,7 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} id="contact">
       <div className={styles.heading_container}>
         <h2>
           <span className={styles.textSpan}>Hör av dig...</span>

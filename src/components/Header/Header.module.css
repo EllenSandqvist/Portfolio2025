@@ -6,12 +6,17 @@
   grid-template-columns: 1fr;
 }
 
-.header_title {
+.headerTitle {
   font-weight: 500;
-  margin: 0.5rem;
+  padding: 0.5rem;
   letter-spacing: 0.15rem;
   display: inline-block;
   border-right: 0.1em solid #fff;
+}
+
+.imgDiv {
+  display: grid;
+  place-items: center;
 }
 
 .typing {
@@ -24,23 +29,23 @@
   }
 }
 
-.header_nav {
+.headerNav {
   display: none;
   background-color: var(--secondary-grey);
 }
 
-.intro_text {
+.introText {
   position: absolute;
   bottom: 1rem;
   left: 1rem;
 }
 
-.header_name {
+.headerName {
   font-size: 1.7rem;
   line-height: 1;
 }
 
-.header_work {
+.headerWork {
   font-size: 1rem;
   background-color: var(--accent-color);
   display: inline-block;
@@ -49,24 +54,71 @@
   margin-top: 1rem;
 }
 
+@media (min-width: 768px) {
+  .header {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .stickyNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    z-index: 1000;
+  }
+
+  .h1Container {
+    column-span: 1/1;
+    background-color: var(--primary-dark);
+    padding: 0.2em;
+  }
+
+  .headerTitle {
+    border-right: 0.1em solid #fff;
+    font-size: 2.2rem;
+    line-height: 1;
+  }
+
+  .headerNav {
+    background-color: var(--secondary-grey);
+    display: block;
+  }
+
+  .navUl {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    height: 100%;
+  }
+
+  .introText {
+    bottom: 4rem;
+    left: 4rem;
+  }
+
+  .headerName {
+    font-size: 2rem;
+  }
+
+  .headerWork {
+    font-size: 1.3rem;
+    margin-top: 0.8rem;
+  }
+}
 /* For full screen: */
-/* .img_div {
+/* .imgDiv {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-auto-rows: auto;
 } */
 
-/* .profile_img {
+/* .profileImg {
   grid-column: 2/3;
 } */
-
-.nav_ul {
-  display: flex;
-  flex-direction: row;
-  gap: 3rem;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  font-weight: 500;
-  padding: 1rem 0;
-}

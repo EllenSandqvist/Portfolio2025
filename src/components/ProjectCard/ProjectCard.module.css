@@ -63,15 +63,14 @@
   border: 1px solid #c4c4c4;
 }
 
-.project_card:hover img,
 .project_card.active img {
   opacity: 0;
 }
 
-.project_card:hover .project_info_view,
 .project_card.active .project_info_view {
   opacity: 1;
   z-index: 3;
+  pointer-events: auto;
 }
 
 .project_description {

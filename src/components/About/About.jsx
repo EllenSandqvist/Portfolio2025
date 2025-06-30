@@ -15,7 +15,7 @@ const About = () => {
     "Som person är jag noggrann, har hög arbetsmoral och tror att olika perspektiv leder till bättre lösningar. När jag inte sitter vid datorn och försöker bli klok på kodningsvärldens logik och mysterier, spenderar jag mycket tid med min sambo och våra två söner. Får jag välja fritt, hänger jag i skogen med gott fika och en svampkorg eller diskuterar världsläget med vänner över en middag. Miljö- och samhällsfrågor engagerar mig, och på senare tid har jag även odlat ett trädgårdsintresse. Mat och dryck, hantverk, litteratur, träning och hälsa är annat jag gärna ägnar mig åt.";
 
   return (
-    <section id="about" className={styles.about}>
+    <section className={styles.about} id="about">
       <div className={styles.img_background}>
         <img
           className={styles.profile_img_small}

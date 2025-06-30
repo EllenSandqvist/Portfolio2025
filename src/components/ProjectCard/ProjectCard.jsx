@@ -1,70 +1,76 @@
-import { useState } from "react";
 import { LuExternalLink } from "react-icons/lu";
 import { FaGithub } from "react-icons/fa";
 
 import styles from "./ProjectCard.module.css";
 
-const ProjectCard = ({ project }) => {
-  //Used for mobile devices to toggle card state:
-  const [isActive, setIsActive] = useState(false);
-
-  const toggleInfo = (e) => {
-    if (e.target.tagName.toLowerCase() === "a") {
-      return;
-    }
-
-    if (window.innerWidth <= 768) {
-      setIsActive((prev) => !prev);
-    }
-  };
+const ProjectCard = ({ project, isActive, setActiveProjectId }) => {
+  const handleActivate = () => setActiveProjectId(project.id);
+  const handleDeactivate = () => setActiveProjectId(null);
 
   return (
-    <div
-      className={`${styles.project_card} ${isActive ? styles.active : ""}`}
-      onMouseLeave={() => setIsActive(false)}
-    >
+    <div className={`${styles.project_card} ${isActive ? styles.active : ""}`}>
       <div className={styles.project_title_tab}>
         <h4>{project.title}</h4>
       </div>
-      <img src={project.img} alt="Project preview" onClick={toggleInfo} />
+      <img
+        tabIndex="0"
+        onKeyDown={(e) => {
+          if (e.key === "Enter" || e.key === " ") handleActivate();
+        }}
+        src={project.img}
+        alt={`Screenshot of ${project.title}`}
+        onClick={handleActivate}
+        onMouseEnter={handleActivate}
+      />
 
-      <div className={styles.project_info_view} onClick={toggleInfo}>
-        <div className={styles.project_description}>
-          <p>{project.description}</p>
-          <div className={styles.tech_container}>
-            {project.technologies.map((tech, index) => (
-              <span key={tech + index} className={styles.tech_chip}>
-                {tech}
-              </span>
-            ))}
+      {isActive && (
+        <div
+          tabIndex="0"
+          onKeyDown={(e) => {
+            if (e.key === "Escape") handleDeactivate();
+          }}
+          className={styles.project_info_view}
+          onMouseLeave={handleDeactivate}
+          onClick={handleDeactivate}
+          role="region"
+          aria-label={`Details about ${project.title}`}
+        >
+          <div className={styles.project_description}>
+            <p>{project.description}</p>
+            <div className={styles.tech_container}>
+              {project.technologies.map((tech, index) => (
+                <span key={tech + index} className={styles.tech_chip}>
+                  {tech}
+                </span>
+              ))}
+            </div>
           </div>
-        </div>
 
-        <div className={styles.project_links_container}>
-          <p>
+          <div className={styles.project_links_container}>
             <a
               className={styles.link_btn}
               href={project.liveDemo}
               target="_blank"
-              onClick={(e) => e.stopPropagation()}
+              rel="noopener noreferrer"
+              aria-label={`Live demo för ${project.title}`}
             >
               Live demo
               <LuExternalLink />
             </a>
-          </p>
-          <p>
+
             <a
               className={styles.link_btn}
               href={project.repo}
               target="_blank"
-              onClick={(e) => e.stopPropagation()}
+              rel="noopener noreferrer"
+              aria-label={`Github repo för ${project.title}`}
             >
               Github Repo
               <FaGithub />
             </a>
-          </p>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };

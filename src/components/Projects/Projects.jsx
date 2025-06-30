@@ -7,6 +7,7 @@ import projectsData from "../../data/projects.js";
 
 const Work = () => {
   const [activeTab, setActiveTab] = useState("own");
+  const [activeProjectId, setActiveProjectId] = useState(null);
 
   const renderContent = () => {
     switch (activeTab) {
@@ -14,7 +15,12 @@ const Work = () => {
         return (
           <>
             {projectsData.ownProjects.map((project) => (
-              <ProjectCard key={project.id} project={project} />
+              <ProjectCard
+                key={project.id}
+                project={project}
+                isActive={activeProjectId === project.id}
+                setActiveProjectId={setActiveProjectId}
+              />
             ))}
           </>
         );
@@ -22,7 +28,12 @@ const Work = () => {
         return (
           <>
             {projectsData.collaborations.map((project) => (
-              <ProjectCard key={project.id} project={project} />
+              <ProjectCard
+                key={project.id}
+                project={project}
+                isActive={activeProjectId === project.id}
+                setActiveProjectId={setActiveProjectId}
+              />
             ))}
           </>
         );

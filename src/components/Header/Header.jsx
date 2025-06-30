@@ -27,16 +27,19 @@ const Header = () => {
     }, 280);
   }, []);
   return (
-    <header className={styles.header}>
-      <div>
-        <h1
-          className={`${styles.header_title} ${styles.typing}`}
-          ref={headingRef}
-        >
-          PORTFOLIO.
-        </h1>
-        <nav className={styles.header_nav}>
-          <ul className={styles.nav_ul}>
+    <header className={styles.header} id="home">
+      <div className={styles.stickyNav}>
+        <div className={styles.h1Container}>
+          <h1
+            className={`${styles.headerTitle} ${styles.typing}`}
+            ref={headingRef}
+          >
+            PORTFOLIO.
+          </h1>
+        </div>
+
+        <nav className={styles.headerNav}>
+          <ul className={styles.navUl}>
             <li>
               <a href="#home">HEM</a>
             </li>
@@ -52,20 +55,17 @@ const Header = () => {
           </ul>
         </nav>
       </div>
-      <div className={styles.img_div}>
-        <img
-          className={styles.profile_img}
-          src={backsjon}
-          alt="Profile image"
-        />
+      <div className={styles.leftColumn}></div>
+      <div className={styles.imgDiv}>
+        <img className={styles.profileImg} src={backsjon} alt="Profile image" />
       </div>
-      <div className={styles.intro_text}>
-        <h2 className={styles.header_name}>
+      <div className={styles.introText}>
+        <h2 className={styles.headerName}>
           ELLEN
           <br />
           SANDQVIST
         </h2>
-        <h3 className={styles.header_work}>FULLSTACKUTVECKLARE JAVASCRIPT</h3>
+        <h3 className={styles.headerWork}>FULLSTACKUTVECKLARE JAVASCRIPT</h3>
       </div>
     </header>
   );
