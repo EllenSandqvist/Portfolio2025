@@ -8,8 +8,8 @@ const ProjectCard = ({ project, isActive, setActiveProjectId }) => {
   const handleDeactivate = () => setActiveProjectId(null);
 
   return (
-    <div className={`${styles.project_card} ${isActive ? styles.active : ""}`}>
-      <div className={styles.project_title_tab}>
+    <div className={`${styles.projectCard} ${isActive ? styles.active : ""}`}>
+      <div className={styles.projectTitleTab}>
         <h4>{project.title}</h4>
       </div>
       <img
@@ -29,26 +29,26 @@ const ProjectCard = ({ project, isActive, setActiveProjectId }) => {
           onKeyDown={(e) => {
             if (e.key === "Escape") handleDeactivate();
           }}
-          className={styles.project_info_view}
+          className={styles.projectInfoView}
           onMouseLeave={handleDeactivate}
           onClick={handleDeactivate}
           role="region"
           aria-label={`Details about ${project.title}`}
         >
-          <div className={styles.project_description}>
+          <div className={styles.projectDescription}>
             <p>{project.description}</p>
-            <div className={styles.tech_container}>
+            <div className={styles.techContainer}>
               {project.technologies.map((tech, index) => (
-                <span key={tech + index} className={styles.tech_chip}>
+                <span key={tech + index} className={styles.techChip}>
                   {tech}
                 </span>
               ))}
             </div>
           </div>
 
-          <div className={styles.project_links_container}>
+          <div className={styles.projectLinksContainer}>
             <a
-              className={styles.link_btn}
+              className={`${styles.linkBtn} linkBtn`}
               href={project.liveDemo}
               target="_blank"
               rel="noopener noreferrer"
@@ -59,7 +59,7 @@ const ProjectCard = ({ project, isActive, setActiveProjectId }) => {
             </a>
 
             <a
-              className={styles.link_btn}
+              className={`${styles.linkBtn} linkBtn`}
               href={project.repo}
               target="_blank"
               rel="noopener noreferrer"

@@ -5,12 +5,14 @@ import Projects from "../Projects/Projects";
 
 const Layout = () => {
   return (
-    <main>
+    <div className="appWrapper">
       <Header />
-      <About />
-      <Projects />
+      <main>
+        <About />
+        <Projects />
+      </main>
       <Footer />
-    </main>
+    </div>
   );
 };
 

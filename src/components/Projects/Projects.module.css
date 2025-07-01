@@ -42,3 +42,15 @@
   position: relative;
   object-fit: contain;
 }
+
+@media (min-width: 768px) {
+  .project_content {
+    margin: 3.5em 0 2em;
+    width: 94%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 2rem;
+    row-gap: 3.5em;
+  }
+}
