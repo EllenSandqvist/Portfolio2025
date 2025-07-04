@@ -1,5 +1,9 @@
 import board from "../assets/board.png";
 import tictactoe from "../assets/tictactoe.png";
+import memory from "../assets/memory.png";
+import mortage from "../assets/mortage.png";
+import mattematchen from "../assets/mattematchen.png";
+import dashboard from "../assets/dashboard.png";
 
 const projectsData = {
   ownProjects: [
@@ -32,17 +36,23 @@ const projectsData = {
       id: 3,
       title: "Dashboard",
       description: " ",
-      img: "https://picsum.photos/400/300",
+      img: dashboard,
       repo: "https://github.com/EllenSandqvist/Dashboard.git",
-      liveDemo: " ",
-      technologies: ["JavaScript", "Unsplash API"],
+      liveDemo: "https://dashboarden.netlify.app/",
+      technologies: [
+        "JavaScript",
+        "Unsplash API",
+        "OpenWeatherMap API",
+        "QuoteSlate API",
+        "localStorage",
+      ],
     },
     {
       id: 4,
       title: "Memory",
       description:
         "Memoryspel för en spelare byggt i vanilla JavaScript med kortvändningsanimationer.",
-      img: "https://picsum.photos/460/330",
+      img: memory,
       repo: "https://github.com/EllenSandqvist/memory.git",
       liveDemo: "https://solo-memory-game.netlify.app/",
       technologies: ["JavaScript"],
@@ -52,20 +62,20 @@ const projectsData = {
       title: "Bolånekalkylator",
       description:
         "Bolånekalkylator i React med TypeScript. Användaren matar in lånebelopp, räntesats och lånetid - kalkylatorn räknar ut månadskostnad, räntekostnad och en amorteringsplan.",
-      img: "https://picsum.photos/460/330",
+      img: mortage,
       repo: "https://github.com/EllenSandqvist/Mortgage-Calculator.git",
       liveDemo: "https://my-mortage-calculator.netlify.app/",
       technologies: ["JavaScript"],
     },
     {
       id: 6,
-      title: "Mathlete Camp",
+      title: "Matte-Matchen",
       description:
-        "Mattespel i vanilla JavaScript med fotbollstema, anpassat för barn som tränar addition och subtraktion.",
-      img: "https://picsum.photos/460/330",
+        "Mattespel i vanilla JavaScript med fotbollstema, anpassat för barn som tränar addition och subtraktion. Spelet är byggt med fokus på tydlig återkoppling och enkel UX anpassad för barn i lågstadieåldern.",
+      img: mattematchen,
       repo: "https://github.com/EllenSandqvist/MathleteCamp.git",
       liveDemo: "https://mathletecamp.netlify.app/",
-      technologies: ["JavaScript"],
+      technologies: ["JavaScript", "TheSportsDB API", "ES Modules"],
     },
   ],
   collaborations: [
