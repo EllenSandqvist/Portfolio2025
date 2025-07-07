@@ -41,8 +41,9 @@
   width: 100%;
   height: 100%;
   transition: opacity 1s ease;
-  border-radius: 0.25rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #d5d4d4;
+  border-radius: 0.25rem;
 }
 
 .projectCard img {
@@ -60,7 +61,6 @@
   flex-direction: column;
   justify-content: start;
   gap: 1rem;
-  border: 1px solid #c4c4c4;
 }
 
 .projectCard.active img {

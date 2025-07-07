@@ -4,6 +4,7 @@ import memory from "../assets/memory.png";
 import mortage from "../assets/mortage.png";
 import mattematchen from "../assets/mattematchen.png";
 import dashboard from "../assets/dashboard.png";
+import kanbanCollab from "../assets/kanban_collab.png";
 
 const projectsData = {
   ownProjects: [
@@ -90,11 +91,11 @@ const projectsData = {
     },
     {
       id: 2,
-      title: "Test2",
+      title: "Kanban App",
       description: "blala ldf sldks fkjös dkf oe ewirjwo eir j",
-      img: "https://picsum.photos/300/350",
+      img: kanbanCollab,
       repo: "https://github.com/EllenSandqvist/MathleteCamp.git",
-      liveDemo: "https://mathletecamp.netlify.app/",
+      liveDemo: "https://kanban-kollab.netlify.app/",
       technologies: ["JavaScript"],
     },
     {
