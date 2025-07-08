@@ -5,6 +5,7 @@ import mortage from "../assets/mortage.png";
 import mattematchen from "../assets/mattematchen.png";
 import dashboard from "../assets/dashboard.png";
 import kanbanCollab from "../assets/kanban_collab.png";
+import quire from "../assets/quire.png";
 
 const projectsData = {
   ownProjects: [
@@ -102,9 +103,9 @@ const projectsData = {
       id: 3,
       title: "Quire",
       description: "blala ldf sldks fkjös dkf oe ewirjwo eir j",
-      img: "https://picsum.photos/300/350",
-      repo: "https://github.com/EllenSandqvist/MathleteCamp.git",
-      liveDemo: "https://mathletecamp.netlify.app/",
+      img: quire,
+      repo: "https://github.com/EllenSandqvist/Quire",
+      liveDemo: "https://quire-app.netlify.app/",
       technologies: ["JavaScript"],
     },
     {
