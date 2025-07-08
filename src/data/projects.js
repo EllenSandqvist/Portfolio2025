@@ -106,7 +106,7 @@ const projectsData = {
       img: quire,
       repo: "https://github.com/EllenSandqvist/Quire",
       liveDemo: "https://quire-app.netlify.app/",
-      technologies: ["JavaScript"],
+      technologies: ["JavaScript", "Google Analytics"],
     },
     {
       id: 4,
