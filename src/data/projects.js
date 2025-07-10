@@ -6,6 +6,7 @@ import mattematchen from "../assets/mattematchen.png";
 import dashboard from "../assets/dashboard.png";
 import kanbanCollab from "../assets/kanban_collab.png";
 import quire from "../assets/quire.png";
+import rently from "../assets/rently.png";
 
 const projectsData = {
   ownProjects: [
@@ -83,12 +84,12 @@ const projectsData = {
   collaborations: [
     {
       id: 1,
-      title: "Test",
+      title: "Rently",
       description: "blala ldf sldks fkjös dkf oe ewirjwo eir j",
-      img: "https://picsum.photos/300/350",
-      repo: "https://github.com/EllenSandqvist/MathleteCamp.git",
-      liveDemo: "https://mathletecamp.netlify.app/",
-      technologies: ["JavaScript"],
+      img: rently,
+      repo: "https://github.com/EllenSandqvist/Rently",
+      liveDemo: "https://rently-app.netlify.app/",
+      technologies: ["Vue"],
     },
     {
       id: 2,
