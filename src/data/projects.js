@@ -74,7 +74,7 @@ const projectsData = {
       id: 6,
       title: "Matte-Matchen",
       description:
-        "Mattespel i vanilla JavaScript med fotbollstema, anpassat för barn som tränar addition och subtraktion. Spelet är byggt med fokus på tydlig återkoppling och enkel UX anpassad för barn i lågstadieåldern.",
+        "Mattespel i vanilla JavaScript med fotbollstema, anpassat för barn som tränar addition och subtraktion. Spelet är byggt med fokus på enkel UX anpassad för barn i lågstadieåldern.",
       img: mattematchen,
       repo: "https://github.com/EllenSandqvist/MathleteCamp.git",
       liveDemo: "https://mathletecamp.netlify.app/",

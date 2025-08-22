@@ -56,11 +56,10 @@
   opacity: 0;
   background-color: var(--background-grey-light);
   color: var(--primary-dark);
-  padding: 1em;
+  padding: 0.5em;
   display: flex;
   flex-direction: column;
   justify-content: start;
-  gap: 1rem;
 }
 
 .projectCard.active img {
@@ -129,6 +128,11 @@
   outline: none;
 }
 
+@media (min-width: 500px) {
+  .projectInfoView {
+    padding: 1em;
+  }
+}
 /* @media (min-width: 768px) {
 }
 
