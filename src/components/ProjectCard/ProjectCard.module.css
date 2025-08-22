@@ -20,6 +20,7 @@
   z-index: 3;
   color: var(--primary-dark);
   background-color: var(--tertiary-purple);
+  background-color: var(--light-coral);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
@@ -54,7 +55,7 @@
 .projectInfoView {
   z-index: 1;
   opacity: 0;
-  background-color: var(--background-grey-light);
+  background-color: var(--background-color-lightest);
   color: var(--primary-dark);
   padding: 0.5em;
   display: flex;
@@ -92,12 +93,12 @@
   padding: 0.3em 0.75em;
   margin: 0 0.5em 0.5em 0;
   color: var(--primary-dark);
-  background-color: var(--tertiary-purple);
-  border: 1px solid var(--tertiary-outline);
+  background-color: var(--pastel-mint);
+  border: 1px solid var(--pastel-mint-outline);
   border-radius: 12px;
   line-height: 1;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   white-space: nowrap;
 }
 

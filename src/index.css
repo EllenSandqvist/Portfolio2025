@@ -7,15 +7,29 @@
 }
 
 :root {
-  /* first layout */
+  /* Base colors */
   --primary-dark: #171717;
-  --accent-color: #fef100;
-  --accent-outline: #feb600;
   --secondary-grey: #5d5d5d;
   --background-grey-light: #ececec;
   --background-color-lightest: #fff;
+
+  /* Accent colors */
+  --accent-color: #fef100;
+  --accent-outline: #feb600;
+
+  /* Complement colors */
   --tertiary-purple: #cfb6ee;
   --tertiary-outline: #9c7fbf;
+  --pastel-mint: #c3f0d4;
+  --pastel-mint-outline: #739680;
+
+  /* Not in use yet */
+  --sunset-orange: #feb600;
+  --light-coral: #fbcac6;
+  --muted-teal: #4fb0ae;
+  --varm-beige: #f5e9d3;
+
+  /* Fonts */
   --font-heading: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   --font-base: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 

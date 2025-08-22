@@ -1,5 +1,5 @@
 .projects {
-  background-color: var(--background-color-lightest);
+  background-color: var(--background-grey-light);
   color: var(--primary-dark);
   display: flex;
   flex-direction: column;

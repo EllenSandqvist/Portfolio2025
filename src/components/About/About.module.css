@@ -1,5 +1,5 @@
 .about {
-  background-color: var(--background-grey-light);
+  background-color: var(--background-color-lightest);
   color: #1e201f;
   padding: 3em;
   display: grid;
