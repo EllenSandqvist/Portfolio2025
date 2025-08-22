@@ -133,10 +133,13 @@
     padding: 1em;
   }
 }
-/* @media (min-width: 768px) {
+@media (min-width: 768px) {
+  .projectInfoView {
+    padding: 0.5em;
+  }
 }
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
 } */
 
 @media (min-width: 1400px) {
