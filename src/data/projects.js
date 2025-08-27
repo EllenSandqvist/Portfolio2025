@@ -23,9 +23,9 @@ const projectsData = {
       technologies: [
         "React",
         "React Context",
+        "Vite",
         "React Router",
         "Drag and drop API",
-        "Vite",
       ],
     },
     {
@@ -50,13 +50,7 @@ const projectsData = {
       img: dashboard,
       repo: "https://github.com/EllenSandqvist/Dashboard.git",
       liveDemo: "https://dashboarden.netlify.app/",
-      technologies: [
-        "JavaScript",
-        "Unsplash API",
-        "OpenWeatherMap API",
-        "QuoteSlate API",
-        "localStorage",
-      ],
+      technologies: ["JavaScript", "External APIs", "localStorage"],
     },
     {
       id: 4,
@@ -79,7 +73,7 @@ const projectsData = {
       img: mortage,
       repo: "https://github.com/EllenSandqvist/Mortgage-Calculator.git",
       liveDemo: "https://my-mortage-calculator.netlify.app/",
-      technologies: ["JavaScript"],
+      technologies: ["TypeScript"],
     },
     {
       id: 6,
