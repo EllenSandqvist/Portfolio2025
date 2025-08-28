@@ -68,12 +68,17 @@ const projectsData = {
       id: 5,
       title: "Bolånekalkylator",
       description:
-        "Bolånekalkylator i React med TypeScript. Användaren matar in lånebelopp, räntesats och lånetid - kalkylatorn räknar ut månadskostnad, räntekostnad och en amorteringsplan.",
-      detailedDescription: "",
+        "Bolånekalkylator byggd i TypeScript som beräknar månadskostnad baserat på lånebelopp, ränta och återbetalningstid. Genererar en fullständig amorteringsplan med ränta, amortering och kvarstående skuld för varje månad.",
+      detailedDescription:
+        "Projektet är utvecklat i TypeScript för att dra nytta av strikt typning och förbättrad kodkvalitet. En egen typ (Loan) används för att beskriva låneobjektet, vilket gör beräkningar och validering mer förutsägbara. Applikationen validerar användarens inmatning med tydliga gränsvärden innan beräkningar görs, vilket minimerar fel och säkerställer realistiska scenarier. Den månatliga kostnaden beräknas med annuitetsformeln, och en amorteringsplan genereras dynamiskt. Tabellens rader visar hur amortering, räntekostnad och återstående skuld förändras månad för månad. Projektet visar tydlig funktionsindelning, strukturerad DOM-manipulation och användning av typning för att bygga en robust och användarvänlig kalkylator.",
       img: mortage,
       repo: "https://github.com/EllenSandqvist/Mortgage-Calculator.git",
       liveDemo: "https://my-mortage-calculator.netlify.app/",
-      technologies: ["TypeScript"],
+      technologies: [
+        "TypeScript",
+        "Input Validation",
+        "Financial Calculations",
+      ],
     },
     {
       id: 6,
