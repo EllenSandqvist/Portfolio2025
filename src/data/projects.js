@@ -68,7 +68,7 @@ const projectsData = {
       description:
         "Memory i JavaScript för en spelare med animerade kortvändningar. Spelet är enkelt och intuitivt, vilket gör det lätt att fokusera på minnesutmaningen.",
       detailedDescription:
-        "Projektet är byggt i modulär vanilla JavaScript med tydlig funktionsindelning. Spellogik, poängräkning och UI-uppdateringar hanteras i separata funktioner. DOM-manipulation används för att dynamiskt generera kort och uppdatera poäng, medan CSS-transformationer och animationer skapar en engagerande visuella flip-effekt. Responsiv design gör att spelet fungerar smidigt på alla skärmstorlekar, och interaktiv feedback ges genom modaler och poängräkning efter varje drag.",
+        "Projektet är byggt i vanilla JavaScript med tydlig funktionsindelning. Spellogik, poängräkning och UI-uppdateringar hanteras i separata funktioner. DOM-manipulation används för att dynamiskt generera kort och uppdatera poäng, medan CSS-transformationer och animationer skapar en engagerande visuella flip-effekt. Responsiv design gör att spelet fungerar smidigt på alla skärmstorlekar, och interaktiv feedback ges genom modaler och poängräkning efter varje drag.",
       img: memory,
       repo: "https://github.com/EllenSandqvist/memory.git",
       liveDemo: "https://solo-memory-game.netlify.app/",
@@ -77,7 +77,6 @@ const projectsData = {
         "Responsive Design",
         "Animations",
         "Dynamic UI",
-        "Modular code",
       ],
     },
     {
