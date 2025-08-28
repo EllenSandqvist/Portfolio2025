@@ -50,7 +50,7 @@ const projectsData = {
       img: dashboard,
       repo: "https://github.com/EllenSandqvist/Dashboard.git",
       liveDemo: "https://dashboarden.netlify.app/",
-      technologies: ["JavaScript", "External APIs", "localStorage"],
+      technologies: ["JavaScript", "External APIs", "LocalStorage"],
     },
     {
       id: 4,
@@ -68,7 +68,7 @@ const projectsData = {
       id: 5,
       title: "Bolånekalkylator",
       description:
-        "Bolånekalkylator i TypeScript som beräknar månadskostnad baserat på lånebelopp, ränta och återbetalningstid. Genererar en amorteringsplan med ränta, amortering och kvarstående skuld per månad.",
+        "Bolånekalkylator i TypeScript som beräknar månadskostnad utifrån lånebelopp, ränta och återbetalningstid och genererar en amorteringsplan.",
       detailedDescription:
         "Projektet är utvecklat i TypeScript för att dra nytta av strikt typning och förbättrad kodkvalitet. En egen typ (Loan) används för att beskriva låneobjektet, vilket gör beräkningar och validering mer förutsägbara. Applikationen validerar användarens inmatning med tydliga gränsvärden innan beräkningar görs, vilket minimerar fel och säkerställer realistiska scenarier. Den månatliga kostnaden beräknas med annuitetsformeln, och en amorteringsplan genereras dynamiskt. Tabellens rader visar hur amortering, räntekostnad och återstående skuld förändras månad för månad. Projektet visar tydlig funktionsindelning, strukturerad DOM-manipulation och användning av typning för att bygga en robust och användarvänlig kalkylator.",
       img: mortage,
@@ -84,12 +84,18 @@ const projectsData = {
       id: 6,
       title: "Matte-Matchen",
       description:
-        "Mattespel i vanilla JavaScript med fotbollstema, anpassat för barn som tränar addition och subtraktion. Spelet är byggt med fokus på enkel UX anpassad för barn i lågstadieåldern.",
-      detailedDescription: "",
+        "Mattespel i JavaScript med fotbollstema för barn som tränar addition och subtraktion. Vid många rätt visas en slumpmässig bild på en spelare från favoritlaget.",
+      detailedDescription:
+        "Projektet är byggt i modulär vanilla JavaScript med tydlig funktionsindelning som underlättar underhåll och vidareutveckling. Spellogik, poängräkning och UI-uppdateringar hanteras i separata funktioner. DOM-manipulation används för att dynamiskt generera frågor, uppdatera poäng och visa modaler med feedback. Vid framgångsrika omgångar hämtas slumpmässiga bilder på spelare från användarens favoritlag via TheSportsDB API, vilket skapar ett extra visuellt inslag som kan motivera till fler omgångar.",
       img: mattematchen,
       repo: "https://github.com/EllenSandqvist/MathleteCamp.git",
       liveDemo: "https://mathletecamp.netlify.app/",
-      technologies: ["JavaScript", "TheSportsDB API", "ES Modules"],
+      technologies: [
+        "JavaScript",
+        "External APIs",
+        "Dynamic UI",
+        "Modular architecture",
+      ],
     },
   ],
   collaborations: [
