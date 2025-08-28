@@ -40,9 +40,9 @@ const projectsData = {
       liveDemo: "https://tictactoe3-5-7.netlify.app/",
       technologies: [
         "React",
-        "State Management",
-        "TypeScript",
         "Component Architecture",
+        "TypeScript",
+        "State Management",
       ],
     },
     {
