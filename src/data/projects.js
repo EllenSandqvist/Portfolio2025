@@ -60,14 +60,13 @@ const projectsData = {
         "External APIs",
         "LocalStorage",
         "Responsive Design",
-        "Dynamic UI",
       ],
     },
     {
       id: 4,
       title: "Memory",
       description:
-        "Memoryspel för en spelare byggt i JavaScript med kortvändningsanimationer. Spelet är enkelt och intuitivt, vilket gör det lätt att fokusera på minnesutmaningen.",
+        "Memoryspel för en spelare byggt i JavaScript med animerade kortvändningar. Spelet är enkelt och intuitivt, vilket gör det lätt att fokusera på minnesutmaningen.",
       detailedDescription:
         "Projektet är byggt i modulär vanilla JavaScript med tydlig funktionsindelning. Spellogik, poängräkning och UI-uppdateringar hanteras i separata funktioner. DOM-manipulation används för att dynamiskt generera kort och uppdatera poäng, medan CSS-transformationer och animationer skapar en engagerande visuella flip-effekt. Responsiv design gör att spelet fungerar smidigt på alla skärmstorlekar, och interaktiv feedback ges genom modaler och poängräkning efter varje drag.",
       img: memory,
