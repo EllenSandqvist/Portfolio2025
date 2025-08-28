@@ -38,7 +38,12 @@ const projectsData = {
       img: tictactoe,
       repo: "https://github.com/EllenSandqvist/TicTacToe.git",
       liveDemo: "https://tictactoe3-5-7.netlify.app/",
-      technologies: ["React", "TypeScript"],
+      technologies: [
+        "React",
+        "TypeScript",
+        "State Management",
+        "Component Architecture",
+      ],
     },
     {
       id: 3,
@@ -50,7 +55,13 @@ const projectsData = {
       img: dashboard,
       repo: "https://github.com/EllenSandqvist/Dashboard.git",
       liveDemo: "https://dashboarden.netlify.app/",
-      technologies: ["JavaScript", "External APIs", "LocalStorage"],
+      technologies: [
+        "JavaScript",
+        "External APIs",
+        "LocalStorage",
+        "Responsive Design",
+        "Dynamic UI",
+      ],
     },
     {
       id: 4,
@@ -58,11 +69,17 @@ const projectsData = {
       description:
         "Memoryspel för en spelare byggt i JavaScript med kortvändningsanimationer. Spelet är enkelt och intuitivt, vilket gör det lätt att fokusera på minnesutmaningen.",
       detailedDescription:
-        "Projektet är ett klassiskt Memoryspel för en spelare, byggt i vanilla JavaScript med animationer för kortvändning som ger tydlig visuell återkoppling. UI/UX är utformat för att göra spelet lättförståeligt och engagerande, med räknare för antal drag som ger spelaren feedback på prestation och framsteg. Projektet demonstrerar grundläggande DOM-manipulation, event-hantering och logik för att hantera kort och registrera matchade par under spelets gång.",
+        "Projektet är byggt i modulär vanilla JavaScript med tydlig funktionsindelning. Spellogik, poängräkning och UI-uppdateringar hanteras i separata funktioner. DOM-manipulation används för att dynamiskt generera kort och uppdatera poäng, medan CSS-transformationer och animationer skapar en engagerande visuella flip-effekt. Responsiv design gör att spelet fungerar smidigt på alla skärmstorlekar, och interaktiv feedback ges genom modaler och poängräkning efter varje drag.",
       img: memory,
       repo: "https://github.com/EllenSandqvist/memory.git",
       liveDemo: "https://solo-memory-game.netlify.app/",
-      technologies: ["JavaScript"],
+      technologies: [
+        "JavaScript",
+        "Animations",
+        "Dynamic UI",
+        "Responsive Design",
+        "Modular code",
+      ],
     },
     {
       id: 5,
