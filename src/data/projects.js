@@ -32,7 +32,7 @@ const projectsData = {
       id: 2,
       title: "TicTacToe",
       description:
-        "Tic-Tac-Toe för två spelare byggt i React och TypeScript med tre olika brädstorlekar. Spelet räknar automatiskt ut vinnaren och erbjuder en tydlig och användarvänlig upplevelse.",
+        "Tic-Tac-Toe för två spelare i React och TypeScript med tre brädstorlekar. Vinnaren räknas ut automatiskt och spelet erbjuder en intuitiv spelupplevelse.",
       detailedDescription:
         "Projektet demonstrerar modern användning av TypeScript i React, med tydliga typdeklarationer och export av globala typer. Spelet erbjuder tre olika brädstorlekar (3x3, 5x5, 7x7) där vinstkraven anpassas för varje bräde och vinnaren räknas ut automatiskt. UI/UX är utformad för att ge en enkel och överskådlig spelupplevelse för två spelare, med tydlig visuell återkoppling vid varje drag och markering av den vinnande raden när spelet är över.",
       img: tictactoe,
@@ -74,9 +74,9 @@ const projectsData = {
       liveDemo: "https://solo-memory-game.netlify.app/",
       technologies: [
         "JavaScript",
+        "Responsive Design",
         "Animations",
         "Dynamic UI",
-        "Responsive Design",
         "Modular code",
       ],
     },
