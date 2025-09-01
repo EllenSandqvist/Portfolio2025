@@ -36,7 +36,11 @@ const ProjectCard = ({ project, isActive, setActiveProjectId }) => {
           aria-label={`Details about ${project.title}`}
         >
           <div className={styles.projectDescription}>
-            <p>{project.description}</p>
+            <p className={styles.description}>{project.description}</p>
+            <p className={styles.midDescription}>{project.midDescription}</p>
+            <p className={styles.detailedDescription}>
+              {project.detailedDescription}
+            </p>
             <div className={styles.techContainer}>
               {project.technologies.map((tech, index) => (
                 <span key={tech + index} className={styles.techChip}>
