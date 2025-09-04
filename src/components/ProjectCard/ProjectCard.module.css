@@ -140,15 +140,11 @@
 @media (min-width: 500px) {
   .projectInfoView {
     padding: 1em;
-    padding: 2.5em;
   }
 
-  .description {
-    margin-bottom: 1.5em;
-  }
-  /* .midDescription {
+  .midDescription {
     display: block;
-  } */
+  }
 }
 @media (min-width: 768px) {
   .projectCard {

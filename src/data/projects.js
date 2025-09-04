@@ -112,7 +112,7 @@ const projectsData = {
       description:
         "Mattespel i JavaScript med fotbollstema för barn som tränar addition och subtraktion. Efter en lyckad om gång visas en slumpmässig bild på en spelare från favoritlaget.",
       midDescription:
-        "Projektet är byggt i modulär vanilla JavaScript med tydlig funktionsindelning som underlättar underhåll och vidareutveckling. Spellogik, poängräkning och UI-uppdateringar hanteras i separata funktioner, och DOM-manipulation används för att dynamiskt generera frågor, uppdatera poäng och visa modaler med feedback.",
+        "Projektet är byggt i modulär vanilla JavaScript med tydligt uppdelade funktioner för spellogik, poäng och UI-uppdateringar, vilket underlättar underhåll och vidareutveckling. DOM-manipulation används för att dynamiskt generera frågor, uppdatera poäng och visa feedback.",
       detailedDescription:
         "Vid framgångsrika omgångar hämtas slumpmässiga bilder på spelare från användarens favoritlag via TheSportsDB API, vilket skapar ett extra visuellt inslag som kan motivera till fler omgångar.",
       img: mattematchen,
