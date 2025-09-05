@@ -131,7 +131,7 @@ const projectsData = {
       id: 1,
       title: "Rently (uthyrningsplattform)",
       description:
-        "Plattform byggd i Vue där användare kan hyra och hyra ut föremål. Med funktioner för att lägga upp saker för uthyrning, bläddra och söka bland tillgängliga föremål samt hantera bokningar.",
+        "Plattform byggd i Vue där användare kan hyra och hyra ut föremål. Användaren kan lägga upp föremål för uthyrning samt filtrera, söka och boka andra användares föremål.",
       midDescription:
         "Skolprojekt i grupp där mitt bidrag främst var användarautentisering (registrering, in- och utloggning), att sätta upp store med Pinia och funktionalitet för att lägga upp nya föremål för uthyrning.",
       detailedDescription:
@@ -141,12 +141,11 @@ const projectsData = {
       liveDemo: "https://rently-app.netlify.app/",
       technologies: [
         "Vue.js",
-        "Vue Router",
         "Composition API",
         "Pinia",
+        "Vue Router",
         "JSONBin",
-        "User authentication",
-        "Toastify",
+        "User auth.",
       ],
     },
     {
