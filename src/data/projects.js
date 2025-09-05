@@ -122,7 +122,7 @@ const projectsData = {
         "JavaScript",
         "External APIs",
         "Dynamic UI",
-        "Modular architecture",
+        "Modular Architecture",
       ],
     },
   ],
@@ -133,7 +133,7 @@ const projectsData = {
       description:
         "Plattform byggd i Vue där användare kan hyra och hyra ut föremål. Användaren kan lägga upp föremål för uthyrning samt filtrera, söka och boka andra användares föremål.",
       midDescription:
-        "Skolprojekt i grupp där mitt bidrag främst var användarautentisering (registrering, in- och utloggning), att sätta upp store med Pinia och funktionalitet för att lägga upp nya föremål för uthyrning.",
+        "Appen är ett skolprojekt där mitt bidrag främst var användarautentisering (registrering, in- och utloggning), att sätta upp store med Pinia och funktionalitet för att lägga upp nya föremål för uthyrning.",
       detailedDescription:
         "Applikationen använder modulära Vue-komponenter med Vue Router för navigering. Funktioner omfattar CRUD-operationer på användare, föremål och bokningar, användarautentisering (registrering, in- och utloggning), samt upplägg av nya föremål för uthyrning. En kalenderfunktion gör det enkelt för användare att välja hyrdatum. Data hanteras via Pinia store och lagras/uppdateras i JSONBin, vilket ger en strukturerad och responsiv lösning med fokus på användarvänlighet.",
       img: rently,
@@ -145,31 +145,50 @@ const projectsData = {
         "Pinia",
         "Vue Router",
         "JSONBin",
-        "User auth.",
+        "User Auth.",
       ],
     },
     {
       id: 2,
       title: "Kanban App",
-      description: "",
-      midDescription: "",
-      detailedDescription: "",
+      description:
+        "Kanban-app i React och Redux för effektiv projektplanering. Användare kan skapa, flytta och hantera uppgifter, sätta deadlines, koppla team-medlemmar m.m.",
+      midDescription:
+        "Appen är ett skolprojekt inspirerat av Trello. Fokus låg på Redux för effektiv state management och återanvändbara komponenter. Projektet innehåller custom hooks för drag-and-drop samt för hantering av aktiv användare och användarinställningar.",
+      detailedDescription:
+        "UI är uppbyggt med modulära React-komponenter som kan återanvändas och enkelt underhållas. Uppgifter kan ges start- och slutdatum, tilldelas till olika användare samt flyttas mellan kolumner med drag-and-drop eller genom menyval. Alla data, inklusive kolumner, uppgifter och användare, hanteras via Redux och sparas i localStorage för att bibehålla användarens information mellan sidladdningar. Appen erbjuder även personliga färginställningar som sparas lokalt för varje användare.",
       img: kanbanCollab,
       repo: "https://github.com/EllenSandqvist/MathleteCamp.git",
       liveDemo: "https://kanban-kollab.netlify.app/",
-      technologies: ["React", "Redux", "Custom Hooks", "Slice"],
-      // Hade vi google Analytics här????
+      technologies: [
+        "React",
+        "Redux",
+        "React Router",
+        "Custom Hooks",
+        "CSS Modules",
+      ],
     },
     {
       id: 3,
       title: "Quire",
-      description: "",
-      midDescription: "",
-      detailedDescription: "",
+      description:
+        "Quire är en digital anteckningsbok där användare kan skapa, redigera och favoritmarkera anteckningar. Appens utseende kan anpassas genom val av färger, typsnitt, textstorlek m.m.",
+      midDescription:
+        "Projektet är byggt i VanillaJS med responsiv design och semantisk HTML. Användaren kan formatera anteckningarna med rubriker, punktlistor, kursiv- och fetstil samt lägga in bilder. All data sparas i localStorage och Google Analytics används för grundläggande användarstatistik.",
+      detailedDescription:
+        "Jag hade huvudansvar för textformateringen, inklusive fetstil, kursiv och understruken text. Textredigeringsfunktionen utvecklades utan deprecated metoder som execCommand, vilket var en utmaning. Appen innehåller även en informationssida vid första besöket, visar skapandedatum för anteckningar, har en utskriftsfunktion som exkluderar menyer och verktygskontroller, samt stöd för sökning bland anteckningar. Personliga inställningar för färger, typsnitt och textstorlek gör anteckningsupplevelsen smidig och anpassningsbar.",
       img: quire,
       repo: "https://github.com/EllenSandqvist/Quire",
       liveDemo: "https://quire-app.netlify.app/",
-      technologies: ["JavaScript", "Google Analytics"],
+      technologies: [
+        "VanillaJS",
+        "Google Analytics",
+        "Text formatting",
+        "Settings panel",
+        "LocalStorage",
+        "HTML",
+        "CSS",
+      ],
     },
     {
       id: 4,
