@@ -129,28 +129,43 @@ const projectsData = {
   collaborations: [
     {
       id: 1,
-      title: "Rently",
-      description: "blala ldf sldks fkjös dkf oe ewirjwo eir j",
-      detailedDescription: "",
+      title: "Rently (uthyrningsplattform)",
+      description:
+        "Plattform byggd i Vue där användare kan hyra och hyra ut föremål. Med funktioner för att lägga upp saker för uthyrning, bläddra och söka bland tillgängliga föremål samt hantera bokningar.",
+      midDescription:
+        "Skolprojekt i grupp där mitt bidrag främst var användarautentisering (registrering, in- och utloggning), att sätta upp store med Pinia och funktionalitet för att lägga upp nya föremål för uthyrning.",
+      detailedDescription:
+        "Applikationen använder modulära Vue-komponenter med Vue Router för navigering. Funktioner omfattar CRUD-operationer på användare, föremål och bokningar, användarautentisering (registrering, in- och utloggning), samt upplägg av nya föremål för uthyrning. En kalenderfunktion gör det enkelt för användare att välja hyrdatum. Data hanteras via Pinia store och lagras/uppdateras i JSONBin, vilket ger en strukturerad och responsiv lösning med fokus på användarvänlighet.",
       img: rently,
       repo: "https://github.com/EllenSandqvist/Rently",
       liveDemo: "https://rently-app.netlify.app/",
-      technologies: ["Vue"],
+      technologies: [
+        "Vue.js",
+        "Vue Router",
+        "Composition API",
+        "Pinia",
+        "JSONBin",
+        "User authentication",
+        "Toastify",
+      ],
     },
     {
       id: 2,
       title: "Kanban App",
-      description: "blala ldf sldks fkjös dkf oe ewirjwo eir j",
+      description: "",
+      midDescription: "",
       detailedDescription: "",
       img: kanbanCollab,
       repo: "https://github.com/EllenSandqvist/MathleteCamp.git",
       liveDemo: "https://kanban-kollab.netlify.app/",
-      technologies: ["JavaScript"],
+      technologies: ["React", "Redux", "Custom Hooks", "Slice"],
+      // Hade vi google Analytics här????
     },
     {
       id: 3,
       title: "Quire",
-      description: "blala ldf sldks fkjös dkf oe ewirjwo eir j",
+      description: "",
+      midDescription: "",
       detailedDescription: "",
       img: quire,
       repo: "https://github.com/EllenSandqvist/Quire",
