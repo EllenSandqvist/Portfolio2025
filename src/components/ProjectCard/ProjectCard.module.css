@@ -186,6 +186,19 @@
   }
 }
 
+@media (orientation: landscape) {
+  body::after {
+    content: "LANDSCAPE!";
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: yellow;
+    color: black;
+    font-size: 20px;
+    z-index: 9999;
+  }
+}
+
 @media (min-width: 1024px) {
   .projectCard {
     max-width: 750px;
