@@ -1,7 +1,7 @@
 .projectCard {
   aspect-ratio: 4 / 3;
   width: 100%;
-  max-width: 540px;
+  max-width: 520px;
   position: relative;
   object-fit: contain;
 }
@@ -139,14 +139,24 @@
 
 @media (min-width: 500px) {
   .projectInfoView {
-    padding: 0.8em;
-    font-size: 0.95rem;
+    padding: 1.5em;
   }
 
+  .description {
+    margin: 0.8em 0;
+  }
+}
+
+@media (min-width: 580px) {
   .midDescription {
     display: block;
   }
+
+  .description {
+    margin: 0;
+  }
 }
+
 @media (min-width: 768px) {
   .projectCard {
     max-width: 650px;
@@ -156,11 +166,9 @@
     margin-bottom: 0em;
   }
 
-  .projectInfoView {
-    padding: 1em;
-    font-size: 1rem;
-  }
-
+  /* .projectInfoView {
+    padding: 3em;
+  } */
   .midDescription {
     display: block;
     margin: 1em 0;
