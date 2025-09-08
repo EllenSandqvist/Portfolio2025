@@ -42,6 +42,7 @@
   position: relative;
   object-fit: contain;
 }
+
 @media (min-width: 500px) {
   .project_content {
     width: 96%;

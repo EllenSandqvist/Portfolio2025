@@ -139,7 +139,7 @@
 
 @media (min-width: 500px) {
   .projectInfoView {
-    padding: 1em;
+    padding: 0.8em;
   }
 
   .midDescription {
@@ -155,9 +155,10 @@
     margin-bottom: 0em;
   }
 
-  /* .projectInfoView {
-    padding: 3em;
-  } */
+  .projectInfoView {
+    padding: 1em;
+  }
+
   .midDescription {
     display: block;
     margin: 1em 0;
