@@ -1,7 +1,7 @@
 .projectCard {
   aspect-ratio: 4 / 3;
   width: 100%;
-  max-width: 530px;
+  max-width: 540px;
   position: relative;
   object-fit: contain;
 }
