@@ -159,7 +159,7 @@
 
 @media (min-width: 768px) {
   .projectCard {
-    max-width: 650px;
+    max-width: 680px;
   }
 
   .description {
@@ -178,7 +178,7 @@
 
 @media (min-width: 768px) and (orientation: landscape) {
   .projectCard {
-    max-width: 500px;
+    max-width: 600px;
   }
 }
 
