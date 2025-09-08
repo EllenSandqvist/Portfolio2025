@@ -172,7 +172,7 @@ const projectsData = {
       id: 3,
       title: "Quire",
       description:
-        "Quire är en digital anteckningsbok där användare kan skapa, redigera och favoritmarkera anteckningar. Appens utseende kan anpassas genom val av färger, typsnitt, textstorlek m.m.",
+        "Quire är en digital anteckningsbok. Användare kan skapa, redigera och favoritmarkera anteckningar. Appen kan anpassas genom val av färger, typsnitt, textstorlek m.m.",
       midDescription:
         "Projektet är byggt i VanillaJS med responsiv design och semantisk HTML. Användaren kan formatera anteckningarna med rubriker, punktlistor, kursiv- och fetstil samt lägga in bilder. All data sparas i localStorage och Google Analytics används för grundläggande användarstatistik.",
       detailedDescription:
