@@ -166,12 +166,13 @@
     margin-bottom: 0em;
   }
 
-  /* .projectInfoView {
-    padding: 3em;
-  } */
+  .projectInfoView {
+    padding: 2em;
+  }
+
   .midDescription {
     display: block;
-    margin: 1em 0;
+    margin: 0.5em 0;
   }
 }
 
@@ -179,20 +180,26 @@
   .projectCard {
     max-width: 750px;
   }
-  .midDescription {
-    margin: 0;
+  .projectInfoView {
+    padding: 2em;
   }
+
   .detailedDescription {
     display: block;
+    margin-bottom: 1em;
   }
 }
 
 @media (min-width: 1400px) {
-  .projectCard {
-    max-width: 580px;
-  }
-
   .projectInfoView {
     padding: 1em;
+  }
+
+  .midDescription {
+    margin: 0.2em 0;
+  }
+
+  .detailedDescription {
+    margin-bottom: 0.5em;
   }
 }

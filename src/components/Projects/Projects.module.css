@@ -33,19 +33,12 @@
 }
 
 .project_content {
-  margin: 3.5em 0 0;
-  width: 92%;
+  margin: 3.5em auto;
+  width: 95%;
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
   gap: 3.5rem;
-}
-
-.project-card {
-  width: 520px;
-  height: 385px;
-  position: relative;
-  object-fit: contain;
 }
 
 @media (min-width: 500px) {
@@ -71,7 +64,8 @@
 @media (min-width: 1400px) {
   .project_content {
     grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
+    gap: 2em;
     row-gap: 4.5em;
+    width: 92%;
   }
 }

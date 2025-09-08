@@ -135,7 +135,7 @@ const projectsData = {
       midDescription:
         "Appen är ett skolprojekt där mitt bidrag främst var användarautentisering (registrering, in- och utloggning), att sätta upp store med Pinia och funktionalitet för att lägga upp nya föremål för uthyrning.",
       detailedDescription:
-        "Applikationen använder modulära Vue-komponenter med Vue Router för navigering. Funktioner omfattar CRUD-operationer på användare, föremål och bokningar, användarautentisering (registrering, in- och utloggning), samt upplägg av nya föremål för uthyrning. En kalenderfunktion gör det enkelt för användare att välja hyrdatum. Data hanteras via Pinia store och lagras/uppdateras i JSONBin, vilket ger en strukturerad och responsiv lösning med fokus på användarvänlighet.",
+        "Appen använder modulära Vue-komponenter med Vue Router för navigering. Funktioner omfattar CRUD-operationer på användare, föremål och bokningar, användarautentisering (registrering, in- och utloggning), samt upplägg av nya föremål för uthyrning. En kalenderfunktion gör det enkelt för användare att välja hyrdatum. Data hanteras via Pinia store och lagras/uppdateras i JSONBin, vilket ger en strukturerad och responsiv lösning med fokus på användarvänlighet.",
       img: rently,
       repo: "https://github.com/EllenSandqvist/Rently",
       liveDemo: "https://rently-app.netlify.app/",
