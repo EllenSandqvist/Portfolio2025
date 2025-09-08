@@ -61,6 +61,7 @@
   display: flex;
   flex-direction: column;
   justify-content: start;
+  font-size: 1rem;
 }
 
 .projectCard.active img {
@@ -78,7 +79,6 @@
   flex-direction: column;
   gap: 0.8em;
   flex: 1;
-  font-size: 1rem;
 }
 
 .midDescription {
@@ -140,6 +140,7 @@
 @media (min-width: 500px) {
   .projectInfoView {
     padding: 0.8em;
+    font-size: 0.95rem;
   }
 
   .midDescription {
@@ -157,6 +158,7 @@
 
   .projectInfoView {
     padding: 1em;
+    font-size: 1rem;
   }
 
   .midDescription {
