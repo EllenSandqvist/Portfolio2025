@@ -174,9 +174,9 @@ const projectsData = {
       description:
         "Quire är en digital anteckningsbok. Användare kan skapa, redigera och favoritmarkera anteckningar. Appen kan anpassas genom val av färger, typsnitt, textstorlek m.m.",
       midDescription:
-        "Projektet är byggt i VanillaJS med responsiv design och semantisk HTML. Användaren kan formatera anteckningarna med rubriker, punktlistor, kursiv- och fetstil samt lägga in bilder. All data sparas i localStorage och Google Analytics används för grundläggande användarstatistik.",
+        "Projektet i VanillaJS har responsiv design och semantisk HTML. Användaren kan formatera anteckningarna med rubriker, punktlistor, kursiv- och fetstil samt lägga in bilder. All data sparas i localStorage och Google Analytics används för grundläggande användarstatistik.",
       detailedDescription:
-        "Jag hade huvudansvar för textformateringen, inklusive fetstil, kursiv och understruken text. Textredigeringsfunktionen utvecklades utan deprecated metoder som execCommand, vilket var en utmaning. Appen innehåller även en informationssida vid första besöket, visar skapandedatum för anteckningar, har en utskriftsfunktion som exkluderar menyer och verktygskontroller, samt stöd för sökning bland anteckningar. Personliga inställningar för färger, typsnitt och textstorlek gör anteckningsupplevelsen smidig och anpassningsbar.",
+        "Mitt huvudansvar var textformateringen som utvecklades utan deprecated metoder som execCommand. Appen visar en informationssida vid första besöket, har skapandedatum för anteckningar, en utskriftsfunktion som exkluderar menyer och verktygskontroller, samt stöd för sökning bland anteckningar.",
       img: quire,
       repo: "https://github.com/EllenSandqvist/Quire",
       liveDemo: "https://quire-app.netlify.app/",
@@ -184,10 +184,7 @@ const projectsData = {
         "VanillaJS",
         "Google Analytics",
         "Text formatting",
-        "Settings panel",
         "LocalStorage",
-        "HTML",
-        "CSS",
       ],
     },
     // {
