@@ -190,16 +190,16 @@ const projectsData = {
         "CSS",
       ],
     },
-    {
-      id: 4,
-      title: "Test3",
-      description: "blala ldf sldks fkjös dkf oe ewirjwo eir j",
-      detailedDescription: "",
-      img: "https://picsum.photos/300/350",
-      repo: "https://github.com/EllenSandqvist/MathleteCamp.git",
-      liveDemo: "https://mathletecamp.netlify.app/",
-      technologies: ["JavaScript"],
-    },
+    // {
+    //   id: 4,
+    //   title: "Test3",
+    //   description: "blala ldf sldks fkjös dkf oe ewirjwo eir j",
+    //   detailedDescription: "",
+    //   img: "https://picsum.photos/300/350",
+    //   repo: "https://github.com/EllenSandqvist/MathleteCamp.git",
+    //   liveDemo: "https://mathletecamp.netlify.app/",
+    //   technologies: ["JavaScript"],
+    // },
   ],
 };
 
