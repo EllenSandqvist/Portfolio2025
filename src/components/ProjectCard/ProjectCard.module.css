@@ -176,16 +176,6 @@
   }
 }
 
-@media (min-width: 768px) and (orientation: landscape) {
-  .projectCard {
-    width: 98%;
-  }
-
-  .projectInfoView {
-    background-color: red;
-  }
-}
-
 @media (orientation: landscape) {
   body::after {
     content: "LANDSCAPE!";
