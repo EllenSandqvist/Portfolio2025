@@ -180,11 +180,10 @@
   .projectCard {
     max-width: 600px;
   }
-  /* 
+
   .projectInfoView {
-    color: red;
-    font-size: 0.8rem;
-  } */
+    font-size: 0.9rem;
+  }
 }
 
 @media (orientation: landscape) {
