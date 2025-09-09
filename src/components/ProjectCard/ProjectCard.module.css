@@ -177,12 +177,13 @@
 }
 
 @media (min-width: 660px) and (orientation: landscape) {
-  .projectCard {
+  /* .projectCard {
     max-width: 600px;
-  }
+  } */
 
   .projectInfoView {
     font-size: 0.9rem;
+    color: red;
   }
 }
 
