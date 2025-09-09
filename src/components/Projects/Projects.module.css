@@ -10,8 +10,21 @@
 
 .projects h2 {
   font-size: 1.8rem;
-  box-shadow: inset 0 -0.5em var(--accent-outline);
   margin-bottom: 2rem;
+  padding: 0 10px 0 0;
+  position: relative;
+  z-index: 2;
+}
+
+.projects h2::after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  bottom: 7px;
+  width: 100%;
+  height: 12px;
+  background-color: var(--accent-outline);
+  z-index: -1;
 }
 
 .tab_container {

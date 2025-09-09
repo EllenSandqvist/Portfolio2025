@@ -37,7 +37,7 @@ const About = () => {
           <h2>
             Vem är jag&nbsp;
             <br />
-            <span className={styles.greeting_text}>HALLÅ DÄR&nbsp;</span>
+            <span className={styles.greeting_text}>HALLÅ DÄR</span>
           </h2>
           <img className={styles.zickzack} src={zickzack} alt="" />
         </div>
