@@ -178,12 +178,12 @@
 
 @media (min-width: 660px) and (orientation: landscape) {
   .projectCard {
-    max-width: 690px;
+    max-width: 684px;
   }
 
   .projectInfoView {
     font-size: 12px;
-    color: rgb(212, 96, 160);
+    /* color: rgb(212, 96, 160); */
   }
 }
 
