@@ -176,6 +176,12 @@
   }
 }
 
+@media (min-width: 768px) and (orientation: landscape) {
+  .projectCard {
+    max-width: 600px;
+  }
+}
+
 @media (orientation: landscape) {
   body::after {
     content: "LANDSCAPE!";
