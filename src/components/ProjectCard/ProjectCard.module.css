@@ -57,11 +57,10 @@
   opacity: 0;
   background-color: var(--background-color-lightest);
   color: var(--primary-dark);
-  padding: 0.5em;
+  padding: 1em;
   display: flex;
   flex-direction: column;
   justify-content: start;
-  /* font-size: 1rem; */
 }
 
 .projectCard.active img {
@@ -192,7 +191,12 @@
 
   .midDescription {
     display: block;
-    margin: 0.5em 0;
+    margin-bottom: 0;
+  }
+
+  .detailedDescription {
+    display: block;
+    margin-bottom: 1em;
   }
 }
 
@@ -203,7 +207,6 @@
 
   .detailedDescription {
     display: block;
-    margin-bottom: 1em;
   }
 }
 
