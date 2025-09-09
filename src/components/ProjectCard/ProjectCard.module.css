@@ -157,6 +157,26 @@
   }
 }
 
+/* Media query for mobiles in landscape mode: */
+@media (min-width: 660px) and (orientation: landscape) {
+  .projectCard {
+    max-width: 600px;
+  }
+
+  .projectInfoView {
+    font-size: 12px;
+    color: rgb(212, 96, 160);
+  }
+
+  .midDescription {
+    margin-bottom: 1em;
+  }
+
+  .linkBtn {
+    font-size: 1rem;
+  }
+}
+
 @media (min-width: 768px) {
   .projectCard {
     max-width: 680px;
@@ -173,25 +193,6 @@
   .midDescription {
     display: block;
     margin: 0.5em 0;
-  }
-}
-
-@media (min-width: 660px) and (orientation: landscape) {
-  .projectCard {
-    max-width: 620px;
-  }
-
-  .projectInfoView {
-    font-size: 12px;
-    /* color: rgb(212, 96, 160); */
-  }
-
-  .midDescription {
-    margin-bottom: 1em;
-  }
-
-  .linkBtn {
-    font-size: 1rem;
   }
 }
 
