@@ -178,7 +178,7 @@
 
 @media (min-width: 660px) and (orientation: landscape) {
   .projectCard {
-    max-width: 680px;
+    max-width: 650px;
   }
 
   .projectInfoView {
@@ -191,7 +191,7 @@
   }
 
   .linkBtn {
-    font-size: 12px;
+    font-size: 1rem;
   }
 }
 
@@ -213,12 +213,17 @@
     max-width: 750px;
   }
   .projectInfoView {
+    font-size: 1rem;
     padding: 2em;
   }
 
   .detailedDescription {
     display: block;
     margin-bottom: 1em;
+  }
+
+  .linkBtn {
+    font-size: 1rem;
   }
 }
 
