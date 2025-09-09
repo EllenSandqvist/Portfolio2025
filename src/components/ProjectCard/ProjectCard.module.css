@@ -176,7 +176,7 @@
   }
 }
 
-@media (min-width: 768px) and (orientation: landscape) {
+@media (min-width: 668px) and (orientation: landscape) {
   .projectCard {
     max-width: 600px;
   }
