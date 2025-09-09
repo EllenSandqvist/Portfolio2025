@@ -178,7 +178,7 @@
 
 @media (min-width: 660px) and (orientation: landscape) {
   .projectCard {
-    max-width: 650px;
+    max-width: 620px;
   }
 
   .projectInfoView {
