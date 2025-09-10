@@ -1,14 +1,61 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import styles from "./Header.module.css";
 import backsjon from "../../assets/backsjon.png";
 
 const Header = () => {
+  const [activeSection, setActiveSection] = useState("home");
+
+  // Scroll/Observer
+  useEffect(() => {
+    const sections = document.querySelectorAll("header, section, footer");
+
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + 150;
+      let current = "home";
+
+      sections.forEach((section) => {
+        if (section.offsetTop <= scrollPosition) {
+          current = section.id;
+        }
+      });
+
+      // Check if one is at the bottom of the page
+      if (
+        window.innerHeight + window.scrollY >=
+        document.body.scrollHeight - 5
+      ) {
+        current = "contact";
+      }
+
+      if (current !== activeSection) {
+        setActiveSection(current);
+      }
+    };
+
+    const updateScrollListener = () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (window.innerWidth >= 768) {
+        handleScroll();
+        window.addEventListener("scroll", handleScroll);
+      }
+    };
+
+    updateScrollListener();
+    window.addEventListener("resize", updateScrollListener);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", updateScrollListener);
+    };
+  }, [activeSection]);
+
+  // Header typing effect:
   const headingRef = useRef(null);
 
   useEffect(() => {
     const portfolioHeading = headingRef.current;
-    const text = portfolioHeading.innerHTML;
-    portfolioHeading.innerHTML = "";
+    const text = portfolioHeading.textContent;
+    portfolioHeading.textContent = "";
 
     let i = 0;
 
@@ -18,7 +65,6 @@ const Header = () => {
         i++;
       } else {
         clearInterval(timer);
-
         setTimeout(() => {
           portfolioHeading.classList.remove("typing");
           portfolioHeading.style.border = "none";
@@ -26,6 +72,7 @@ const Header = () => {
       }
     }, 280);
   }, []);
+
   return (
     <header className={styles.header} id="home">
       <div className={styles.stickyNav}>
@@ -41,16 +88,36 @@ const Header = () => {
         <nav className={styles.headerNav}>
           <ul className={styles.navUl}>
             <li>
-              <a href="#home">HEM</a>
+              <a
+                href="#home"
+                className={activeSection === "home" ? styles.active : ""}
+              >
+                HEM
+              </a>
             </li>
             <li>
-              <a href="#about">OM MIG</a>
+              <a
+                href="#about"
+                className={activeSection === "about" ? styles.active : ""}
+              >
+                OM MIG
+              </a>
             </li>
             <li>
-              <a href="#work">PROJEKT</a>
+              <a
+                href="#work"
+                className={activeSection === "work" ? styles.active : ""}
+              >
+                PROJEKT
+              </a>
             </li>
             <li>
-              <a href="#contact">KONTAKT</a>
+              <a
+                href="#contact"
+                className={activeSection === "contact" ? styles.active : ""}
+              >
+                KONTAKT
+              </a>
             </li>
           </ul>
         </nav>
