@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./Header.module.css";
 import backsjon from "../../assets/backsjon.png";
+import { LanguageSwitch } from "../LanguageSwitch/LanguageSwitch";
 
 const Header = () => {
   const [activeSection, setActiveSection] = useState("home");
@@ -121,6 +122,7 @@ const Header = () => {
             </li>
           </ul>
         </nav>
+        <LanguageSwitch />
       </div>
       <div className={styles.leftColumn}></div>
       <div className={styles.imgDiv}>
