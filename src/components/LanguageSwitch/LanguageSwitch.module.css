@@ -6,13 +6,13 @@
   font-size: 1rem;
   position: absolute;
   right: 10px;
-  top: 13px;
+  top: 15px;
 }
 
 .selected {
   font-weight: 500;
   position: relative;
-  padding: 0px 16px 0px 3px;
+  padding: 0px 16px 0px 4px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -25,6 +25,9 @@
 
 .flag {
   display: inline-block;
+  padding-right: 1px;
+  width: 22px;
+  height: auto;
 }
 
 .arrow {
@@ -36,7 +39,7 @@
 
 .options {
   display: none;
-  width: 86px;
+  width: 90px;
   border-top: 1px solid var(--secondary-grey);
 }
 
@@ -50,12 +53,12 @@
   align-items: center;
   gap: 0.2em;
   justify-content: start;
-  padding-left: 3px;
+  padding: 1px 0 0 4px;
 }
 
-.options li:hover {
-  background-color: var(--secondary-grey);
-  color: var(--background-color-lightest);
+.options li:hover,
+.options li:focus-visible {
+  background-color: #d4d1d1;
   font-weight: 500;
   border-radius: 2px;
   cursor: pointer;
