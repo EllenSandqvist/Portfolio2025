@@ -34,19 +34,16 @@
 
 .tab {
   color: var(--primary-dark);
+  position: relative;
 }
 
 .tab_active {
-  /* text-decoration: underline;
-  text-underline-offset: 5px;
-  text-decoration-color: var(--accent-outline);
-  text-decoration-thickness: 6px;
-  outline: none; */
   font-size: 1.1rem;
   position: relative;
 }
 
-.tab_active::after {
+.tab_active::after,
+.tab:hover::after {
   content: "";
   position: absolute;
   left: 0;
