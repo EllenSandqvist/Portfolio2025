@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import styles from "./LanguageSwitch.module.css";
 import { useEffect, useRef, useState } from "react";
 import sweden from "../../assets/sweden.svg";
@@ -5,8 +6,8 @@ import uk from "../../assets/united-kingdom.svg";
 import { RiArrowDownSLine, RiArrowUpSLine } from "react-icons/ri";
 
 export const LanguageSwitch = () => {
+  const { t, i18n } = useTranslation();
   const [isActive, setIsActive] = useState(false);
-  const [chosenLanguage, setChosenLanguage] = useState("sv");
   const ref = useRef(null);
 
   useEffect(() => {
@@ -26,13 +27,13 @@ export const LanguageSwitch = () => {
   const languageOptions = {
     sv: (
       <>
-        <img className={styles.flag} src={sweden} />
+        <img className={styles.flag} src={sweden} alt="Swedish flag" />
         <span>SV</span>
       </>
     ),
     en: (
       <>
-        <img className={styles.flag} src={uk} />
+        <img className={styles.flag} src={uk} alt="UK flag" />
         <span>EN</span>
       </>
     ),
@@ -41,20 +42,21 @@ export const LanguageSwitch = () => {
   const languageLabels = {
     sv: (
       <>
-        <img className={styles.flag} src={sweden} />
+        <img className={styles.flag} src={sweden} alt="Swedish flag" />
         <span>Svenska</span>
       </>
     ),
     en: (
       <>
-        <img className={styles.flag} src={uk} />
+        <img className={styles.flag} src={uk} alt="UK flag" />
         <span>English</span>
       </>
     ),
   };
 
   const handleLanguageChoice = (language) => {
-    setChosenLanguage(language);
+    if (language === i18n.language) return;
+    i18n.changeLanguage(language);
     setIsActive(false);
   };
 
@@ -68,7 +70,7 @@ export const LanguageSwitch = () => {
         tabIndex={0}
         onKeyDown={(e) => e.key === "Enter" && setIsActive(!isActive)}
       >
-        {languageOptions[chosenLanguage]}
+        {languageOptions[i18n.language]}
         <span className={styles.arrow}>
           {isActive ? <RiArrowUpSLine /> : <RiArrowDownSLine />}
         </span>

@@ -1,9 +1,11 @@
 import { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import styles from "./Header.module.css";
 import backsjon from "../../assets/backsjon.png";
 import { LanguageSwitch } from "../LanguageSwitch/LanguageSwitch";
 
 const Header = () => {
+  const { t } = useTranslation();
   const [activeSection, setActiveSection] = useState("home");
 
   // Scroll/Observer
@@ -93,7 +95,7 @@ const Header = () => {
                 href="#home"
                 className={activeSection === "home" ? styles.active : ""}
               >
-                HEM
+                {t("navHome")}
               </a>
             </li>
             <li>
@@ -101,7 +103,7 @@ const Header = () => {
                 href="#about"
                 className={activeSection === "about" ? styles.active : ""}
               >
-                OM MIG
+                {t("navAbout")}
               </a>
             </li>
             <li>
@@ -109,7 +111,7 @@ const Header = () => {
                 href="#work"
                 className={activeSection === "work" ? styles.active : ""}
               >
-                PROJEKT
+                {t("navProject")}
               </a>
             </li>
             <li>
@@ -117,7 +119,7 @@ const Header = () => {
                 href="#contact"
                 className={activeSection === "contact" ? styles.active : ""}
               >
-                KONTAKT
+                {t("navContact")}
               </a>
             </li>
           </ul>

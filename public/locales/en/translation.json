@@ -1,0 +1,10 @@
+{
+  "navHome": "HOME",
+  "navAbout": "ABOUT",
+  "navProject": "PROJECTS",
+  "navContact": "CONTACT",
+  "about": {
+    "title": "About",
+    "text": "I'm a fullstack developer..."
+  }
+}

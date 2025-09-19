@@ -1,0 +1,10 @@
+{
+  "navHome": "HEM",
+  "navAbout": "OM MIG",
+  "navProject": "PROJEKT",
+  "navContact": "KONTAKT",
+  "about": {
+    "title": "Om mig",
+    "text": "Jag är en fullstack-utvecklare..."
+  }
+}
