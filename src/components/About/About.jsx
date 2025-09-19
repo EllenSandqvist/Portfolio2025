@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 import styles from "./About.module.css";
 
 // Imported images:
@@ -8,6 +10,7 @@ import Ellen_svartvitt from "../../assets/Ellen_svartvitt.jpg";
 import Accordion from "../Accordion/Accordion";
 
 const About = () => {
+  const { t } = useTranslation();
   const aboutText = {
     summary:
       "Jag är fullstackutvecklare i JavaScript med ett stort intresse för design och UI/UX. Jag bygger gärna i React, men har även koll på Vue och vanilla JavaScript.",
@@ -30,9 +33,9 @@ const About = () => {
       <div className={styles.about_container}>
         <div className={styles.about_heading_div}>
           <h2>
-            Vem är jag&nbsp;
+            {t("about.h2")}&nbsp;
             <br />
-            <span className={styles.greeting_text}>HALLÅ DÄR</span>
+            <span className={styles.greeting_text}>{t("about.title")}</span>
           </h2>
           <img className={styles.zickzack} src={zickzack} alt="" />
         </div>
@@ -42,9 +45,9 @@ const About = () => {
 
         {/* Expanded text is shown on bigger screens */}
         <div className={styles.textExpanded}>
-          <p>{aboutText.summary}</p>
+          <p>{t("about.summary")}</p>
           <br />
-          <p>{aboutText.showMore}</p>
+          <p>{t("about.showMore")}</p>
         </div>
       </div>
     </section>

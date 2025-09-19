@@ -3,8 +3,11 @@
   "navAbout": "ABOUT",
   "navProject": "PROJECTS",
   "navContact": "CONTACT",
+  "title": "FULLSTACK-DEVELOPER JAVASCRIPT",
   "about": {
-    "title": "About",
-    "text": "I'm a fullstack developer..."
+    "h2": "who am i",
+    "title": "HEY THERE",
+    "summary": "I am a full-stack JavaScript developer with a strong interest in design and UI/UX. I enjoy building in React, but I’m also familiar with Vue and vanilla JavaScript.",
+    "showMore": "I’m a detail-oriented person with a strong work ethic, and I believe that different perspectives lead to better solutions. When I’m not at my computer exploring the logic and quirks of coding, I spend most of my time with my partner and our two sons. If I have free choice, you’ll find me wandering the forest with a mushroom basket, or having dinner with friends, discussing society, culture and the world. I’m passionate about environmental and social issues, and lately I’ve also taken up gardening. Food and drink, crafts, literature, fitness, and health are some of my other interests."
   }
 }

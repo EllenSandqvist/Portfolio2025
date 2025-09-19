@@ -136,7 +136,7 @@ const Header = () => {
           <br />
           SANDQVIST
         </h2>
-        <h3 className={styles.headerWork}>FULLSTACKUTVECKLARE JAVASCRIPT</h3>
+        <h3 className={styles.headerWork}>{t("title")}</h3>
       </div>
     </header>
   );
