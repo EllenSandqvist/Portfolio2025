@@ -1,5 +1,8 @@
 import styles from "./LanguageSwitch.module.css";
 import { useEffect, useRef, useState } from "react";
+import sweden from "../../assets/sweden.svg";
+import uk from "../../assets/united-kingdom.svg";
+import { RiArrowDownSLine, RiArrowUpSLine } from "react-icons/ri";
 
 export const LanguageSwitch = () => {
   const [isActive, setIsActive] = useState(false);
@@ -21,8 +24,33 @@ export const LanguageSwitch = () => {
   }, []);
 
   const languageOptions = {
-    sv: "🟦 Svenska 🔻",
-    en: "🟥 English 🔻",
+    sv: (
+      <>
+        <img className={styles.flag} src={sweden} />
+        <span>SV</span>
+      </>
+    ),
+    en: (
+      <>
+        <img className={styles.flag} src={uk} />
+        <span>EN</span>
+      </>
+    ),
+  };
+
+  const languageLabels = {
+    sv: (
+      <>
+        <img className={styles.flag} src={sweden} />
+        <span>Svenska</span>
+      </>
+    ),
+    en: (
+      <>
+        <img className={styles.flag} src={uk} />
+        <span>English</span>
+      </>
+    ),
   };
 
   const handleLanguageChoice = (language) => {
@@ -40,20 +68,20 @@ export const LanguageSwitch = () => {
         tabIndex={0}
         onKeyDown={(e) => e.key === "Enter" && setIsActive(!isActive)}
       >
-        {languageOptions[chosenLanguage].replace(
-          " 🔻",
-          isActive ? " 🔺" : " 🔻"
-        )}
+        {languageOptions[chosenLanguage]}
+        <span className={styles.arrow}>
+          {isActive ? <RiArrowUpSLine /> : <RiArrowDownSLine />}
+        </span>
       </div>
       <ul className={`${styles.options} ${isActive ? styles.active : ""}`}>
-        {Object.entries(languageOptions).map(([key, label]) => (
+        {Object.entries(languageLabels).map(([key, label]) => (
           <li
             tabIndex={0}
             key={key}
             onClick={() => handleLanguageChoice(key)}
             onKeyDown={(e) => e.key === "Enter" && handleLanguageChoice(key)}
           >
-            {label.replace(" 🔻", "")}
+            {label}
           </li>
         ))}
       </ul>
