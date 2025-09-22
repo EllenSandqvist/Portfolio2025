@@ -1,7 +1,9 @@
+import { useTranslation } from "react-i18next";
 import styles from "./Accordion.module.css";
 import { useState } from "react";
 
 const Accordion = ({ summary, children }) => {
+  const { t } = useTranslation();
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
@@ -14,7 +16,7 @@ const Accordion = ({ summary, children }) => {
         {summary}
         {!isExpanded && (
           <span aria-hidden="true" className={styles.show_more}>
-            Show more
+            {t("about.expand")}
           </span>
         )}
       </summary>
@@ -32,7 +34,7 @@ const Accordion = ({ summary, children }) => {
               }
             }}
           >
-            Show less
+            {t("about.decrease")}
           </span>
         )}
       </div>

@@ -95,7 +95,7 @@ const Header = () => {
                 href="#home"
                 className={activeSection === "home" ? styles.active : ""}
               >
-                {t("navHome")}
+                {t("nav.home")}
               </a>
             </li>
             <li>
@@ -103,7 +103,7 @@ const Header = () => {
                 href="#about"
                 className={activeSection === "about" ? styles.active : ""}
               >
-                {t("navAbout")}
+                {t("nav.about")}
               </a>
             </li>
             <li>
@@ -111,7 +111,7 @@ const Header = () => {
                 href="#work"
                 className={activeSection === "work" ? styles.active : ""}
               >
-                {t("navProject")}
+                {t("nav.projects")}
               </a>
             </li>
             <li>
@@ -119,7 +119,7 @@ const Header = () => {
                 href="#contact"
                 className={activeSection === "contact" ? styles.active : ""}
               >
-                {t("navContact")}
+                {t("nav.contact")}
               </a>
             </li>
           </ul>

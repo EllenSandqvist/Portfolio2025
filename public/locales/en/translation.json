@@ -1,13 +1,58 @@
 {
-  "navHome": "HOME",
-  "navAbout": "ABOUT",
-  "navProject": "PROJECTS",
-  "navContact": "CONTACT",
   "title": "FULLSTACK-DEVELOPER JAVASCRIPT",
+  "nav": {
+    "home": "HOME",
+    "about": "ABOUT",
+    "projects": "PROJECTS",
+    "contact": "CONTACT"
+  },
   "about": {
     "h2": "who am i",
     "title": "HEY THERE",
+    "expand": "Read more",
+    "decrease": "Show less",
     "summary": "I am a full-stack JavaScript developer with a strong interest in design and UI/UX. I enjoy building in React, but I’m also familiar with Vue and vanilla JavaScript.",
     "showMore": "I’m a detail-oriented person with a strong work ethic, and I believe that different perspectives lead to better solutions. When I’m not at my computer exploring the logic and quirks of coding, I spend most of my time with my partner and our two sons. If I have free choice, you’ll find me wandering the forest with a mushroom basket, or having dinner with friends, discussing society, culture and the world. I’m passionate about environmental and social issues, and lately I’ve also taken up gardening. Food and drink, crafts, literature, fitness, and health are some of my other interests."
+  },
+  "projects": {
+    "title": "PROJECTS",
+    "personal": "OWN PROJECTS",
+    "collab": "COLLABORATIONS"
+  },
+  "kanban": {
+    "title": "Kanban Board",
+    "description": "Kanban app with a modular design where the user can create, edit, and move tasks between columns, either via drag-and-drop or arrow buttons for improved accessibility.",
+    "midDescription": "The project is built in React. A modular component architecture makes the code reusable and easy to maintain. Interactive modals are used for task editing. Data is stored in localStorage to preserve settings between visits.",
+    "detailedDescription": "Responsive design ensures a smooth experience on both mobile and desktop, and accessibility solutions such as arrow buttons complement drag-and-drop so all users can manage tasks efficiently."
+  },
+  "tictactoe": {
+    "title": "TicTacToe",
+    "description": "Tic-Tac-Toe for two players built in React and TypeScript with three board sizes. The winner is calculated automatically, and the game provides an intuitive playing experience.",
+    "midDescription": "The project demonstrates modern use of TypeScript in React, with clear type declarations and global type exports. The game logic, which manages turn order and adapts to three board sizes, has a structured and maintainable codebase.",
+    "detailedDescription": "The UI/UX is designed to provide a simple and clear gameplay experience for two players, with distinct visual feedback for each move and highlighting of the winning line when the game ends."
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "description": "Personal dashboard with customizable modules and information retrieved from external APIs. Add links, view the weather, write notes, change the background image, and more.",
+    "midDescription": "The dashboard includes editable headings and a real-time clock, as well as modules for links, notes, and weather that can be customized by the user. All information is stored in LocalStorage so settings and notes are preserved between visits.",
+    "detailedDescription": "The project uses multiple APIs, including for weather and background images, demonstrating how different types of data can be presented in a user-friendly way."
+  },
+  "memory": {
+    "title": "Memory",
+    "description": "Memory in JavaScript for a single player with animated card flips. The game is simple and intuitive, making it easy to focus on the memory challenge.",
+    "midDescription": "The project is built in vanilla JavaScript with clear functional separation. Game logic, score calculation, and UI updates are handled in separate functions, and DOM manipulation is used to dynamically generate the cards.",
+    "detailedDescription": "CSS transformations and animations create an engaging visual flip effect. Responsive design ensures the game runs smoothly on all screen sizes, with interactive feedback provided through modals and score updates after each move."
+  },
+  "mortgageCalculator": {
+    "title": "Mortgage Calculator",
+    "description": "Mortgage Calculator in TypeScript that computes monthly payments based on loan amount, interest rate, and repayment period, while generating an amortization schedule.",
+    "midDescription": "The project is developed in TypeScript to leverage strict typing and improved code quality. A custom type (Loan) is used to describe loan objects, and the application validates user input with clear boundaries before performing calculations.",
+    "detailedDescription": "Monthly payments are calculated using the annuity formula, and an amortization schedule is generated dynamically. The table rows show how principal, interest, and remaining balance change month by month. The project demonstrates clear functional separation, structured DOM manipulation, and the use of typing to build a robust and user-friendly calculator."
+  },
+  "mathleteCamp": {
+    "title": "Mathlete Camp",
+    "description": "Math game in JavaScript with a football theme for children, practicing addition and subtraction. After a successful round, a random image of a player from the favorite team is displayed.",
+    "midDescription": "The project is built in modular vanilla JavaScript with clearly separated functions for game logic, scoring, and UI updates, facilitating maintenance and further development. DOM manipulation is used to dynamically generate questions, update scores, and provide feedback.",
+    "detailedDescription": "After successful rounds, random images of players from the user's favorite team are retrieved via TheSportsDB API, adding an extra visual element that can motivate additional rounds."
   }
 }

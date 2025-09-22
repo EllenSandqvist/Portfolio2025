@@ -41,7 +41,10 @@ const About = () => {
         </div>
 
         {/* Accordion is shown on small screens */}
-        <Accordion summary={aboutText.summary} children={aboutText.showMore} />
+        <Accordion
+          summary={t("about.summary")}
+          children={t("about.showMore")}
+        />
 
         {/* Expanded text is shown on bigger screens */}
         <div className={styles.textExpanded}>
