@@ -105,9 +105,10 @@
   .navUl {
     display: flex;
     flex-direction: row;
-    gap: 3rem;
+    /* gap: 2em; */
+    padding-right: 4em;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     font-size: 1.2rem;
     font-weight: 500;
     height: 100%;
@@ -136,9 +137,21 @@
   }
 }
 
+@media (min-width: 900px) {
+  .navUl {
+    gap: 2em;
+    justify-content: center;
+  }
+}
+
 @media (min-width: 1024px) {
   .h1Container {
     text-align: center;
+  }
+
+  .navUl {
+    gap: 2.5em;
+    font-size: 1.3rem;
   }
 
   .introText {
@@ -156,7 +169,7 @@
 
 @media (min-width: 1400px) {
   .navUl {
-    gap: 4rem;
+    gap: 3.5rem;
     font-size: 1.4rem;
   }
 }
