@@ -1,0 +1,65 @@
+.customSelect {
+  background-color: var(--background-color-lightest);
+  color: var(--primary-dark);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+
+.selected {
+  font-weight: 500;
+  position: relative;
+  padding: 0px 16px 0px 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.2em;
+}
+
+.selected:hover {
+  cursor: pointer;
+}
+
+.flag {
+  display: inline-block;
+  padding-right: 1px;
+  width: 22px;
+  height: auto;
+}
+
+.arrow {
+  position: absolute;
+  right: 0px;
+  top: 2px;
+  pointer-events: none;
+}
+
+.options {
+  display: none;
+  width: 90px;
+  border-top: 1px solid var(--secondary-grey);
+}
+
+.options.active {
+  display: block;
+}
+
+.options li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.2em;
+  justify-content: start;
+  padding: 1px 0 0 4px;
+}
+
+.options li:hover,
+.options li:focus-visible {
+  background-color: #d4d1d1;
+  font-weight: 500;
+  border-radius: 2px;
+  cursor: pointer;
+}

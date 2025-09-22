@@ -1,16 +1,18 @@
+import { useTranslation } from "react-i18next";
 import { LuExternalLink } from "react-icons/lu";
 import { FaGithub } from "react-icons/fa";
 
 import styles from "./ProjectCard.module.css";
 
 const ProjectCard = ({ project, isActive, setActiveProjectId }) => {
+  const { t } = useTranslation();
   const handleActivate = () => setActiveProjectId(project.id);
   const handleDeactivate = () => setActiveProjectId(null);
 
   return (
     <div className={`${styles.projectCard} ${isActive ? styles.active : ""}`}>
       <div className={styles.projectTitleTab}>
-        <h4>{project.title}</h4>
+        <h4>{t(`${project.title}`)}</h4>
       </div>
       <img
         tabIndex="0"
@@ -36,17 +38,21 @@ const ProjectCard = ({ project, isActive, setActiveProjectId }) => {
           aria-label={`Details about ${project.title}`}
         >
           <div className={styles.projectDescription}>
-            <p className={styles.description}>{project.description}</p>
-            <p className={styles.midDescription}>{project.midDescription}</p>
+            <p className={styles.description}>{t(`${project.description}`)}</p>
+            <p className={styles.midDescription}>
+              {t(`${project.midDescription}`)}
+            </p>
             <p className={styles.detailedDescription}>
-              {project.detailedDescription}
+              {t(`${project.detailedDescription}`)}
             </p>
             <div className={styles.techContainer}>
-              {project.technologies.map((tech, index) => (
-                <span key={tech + index} className={styles.techChip}>
-                  {tech}
-                </span>
-              ))}
+              {t(`${project.technologies}`, { returnObjects: true }).map(
+                (tech, index) => (
+                  <span key={tech + index} className={styles.techChip}>
+                    {tech}
+                  </span>
+                )
+              )}
             </div>
           </div>
 

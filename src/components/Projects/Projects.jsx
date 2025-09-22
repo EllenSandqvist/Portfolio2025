@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 import styles from "./Projects.module.css";
 
@@ -6,6 +7,7 @@ import ProjectCard from "../ProjectCard/ProjectCard.jsx";
 import projectsData from "../../data/projects.js";
 
 const Work = () => {
+  const { t } = useTranslation();
   const [activeTab, setActiveTab] = useState("own");
   const [activeProjectId, setActiveProjectId] = useState(null);
 
@@ -44,7 +46,7 @@ const Work = () => {
 
   return (
     <section className={styles.projects} id="work">
-      <h2>PROJEKT</h2>
+      <h2>{t("projects.title")}</h2>
       <div className={styles.tab_container}>
         <button
           className={`${styles.tab} ${
@@ -52,7 +54,7 @@ const Work = () => {
           }`}
           onClick={() => setActiveTab("own")}
         >
-          <h3>EGNA PROJEKT</h3>
+          <h3>{t("projects.personal")}</h3>
         </button>
         <button
           className={`${styles.tab} ${
@@ -60,7 +62,7 @@ const Work = () => {
           }`}
           onClick={() => setActiveTab("collab")}
         >
-          <h3>SAMARBETEN</h3>
+          <h3>{t("projects.collab")}</h3>
         </button>
       </div>
       <div className={styles.project_content}>{renderContent()}</div>

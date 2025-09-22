@@ -1,16 +1,19 @@
+import { useTranslation } from "react-i18next";
 import styles from "./Footer.module.css";
 import { IoIosMail } from "react-icons/io";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className={styles.footer} id="contact">
       <div className={styles.heading_container}>
         <h2>
-          <span className={styles.textSpan}>Hör av dig...</span>
+          <span className={styles.textSpan}>{t("footer.subHeading")}</span>
           <br />
-          KONTAKT
+          {t("footer.heading")}
         </h2>
       </div>
       <div className={styles.mail}>

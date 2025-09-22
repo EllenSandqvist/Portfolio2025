@@ -1,8 +1,11 @@
 import { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import styles from "./Header.module.css";
 import backsjon from "../../assets/backsjon.png";
+import { LanguageSwitch } from "../LanguageSwitch/LanguageSwitch";
 
 const Header = () => {
+  const { t } = useTranslation();
   const [activeSection, setActiveSection] = useState("home");
 
   // Scroll/Observer
@@ -92,7 +95,7 @@ const Header = () => {
                 href="#home"
                 className={activeSection === "home" ? styles.active : ""}
               >
-                HEM
+                {t("nav.home")}
               </a>
             </li>
             <li>
@@ -100,7 +103,7 @@ const Header = () => {
                 href="#about"
                 className={activeSection === "about" ? styles.active : ""}
               >
-                OM MIG
+                {t("nav.about")}
               </a>
             </li>
             <li>
@@ -108,7 +111,7 @@ const Header = () => {
                 href="#work"
                 className={activeSection === "work" ? styles.active : ""}
               >
-                PROJEKT
+                {t("nav.projects")}
               </a>
             </li>
             <li>
@@ -116,11 +119,12 @@ const Header = () => {
                 href="#contact"
                 className={activeSection === "contact" ? styles.active : ""}
               >
-                KONTAKT
+                {t("nav.contact")}
               </a>
             </li>
           </ul>
         </nav>
+        <LanguageSwitch />
       </div>
       <div className={styles.leftColumn}></div>
       <div className={styles.imgDiv}>
@@ -132,7 +136,7 @@ const Header = () => {
           <br />
           SANDQVIST
         </h2>
-        <h3 className={styles.headerWork}>FULLSTACKUTVECKLARE JAVASCRIPT</h3>
+        <h3 className={styles.headerWork}>{t("title")}</h3>
       </div>
     </header>
   );
