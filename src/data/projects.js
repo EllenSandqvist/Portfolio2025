@@ -19,13 +19,7 @@ const projectsData = {
       img: board,
       repo: "https://github.com/EllenSandqvist/Kanban.git",
       liveDemo: "https://task-flow-board.netlify.app/",
-      technologies: [
-        "React",
-        "React Context",
-        "Vite",
-        "React Router",
-        "Drag and drop API",
-      ],
+      technologies: "kanban.technologies",
     },
     {
       id: 2,
@@ -36,12 +30,7 @@ const projectsData = {
       img: tictactoe,
       repo: "https://github.com/EllenSandqvist/TicTacToe.git",
       liveDemo: "https://tictactoe3-5-7.netlify.app/",
-      technologies: [
-        "React",
-        "Component Architecture",
-        "TypeScript",
-        "State Management",
-      ],
+      technologies: "tictactoe.technologies",
     },
     {
       id: 3,
@@ -52,12 +41,7 @@ const projectsData = {
       img: dashboard,
       repo: "https://github.com/EllenSandqvist/Dashboard.git",
       liveDemo: "https://dashboarden.netlify.app/",
-      technologies: [
-        "JavaScript",
-        "External APIs",
-        "LocalStorage",
-        "Responsive Design",
-      ],
+      technologies: "dashboard.technologies",
     },
     {
       id: 4,
@@ -68,12 +52,7 @@ const projectsData = {
       img: memory,
       repo: "https://github.com/EllenSandqvist/memory.git",
       liveDemo: "https://solo-memory-game.netlify.app/",
-      technologies: [
-        "JavaScript",
-        "Responsive Design",
-        "Animations",
-        "Dynamic UI",
-      ],
+      technologies: "memory.technologies",
     },
     {
       id: 5,
@@ -84,11 +63,7 @@ const projectsData = {
       img: mortgage,
       repo: "https://github.com/EllenSandqvist/Mortgage-Calculator.git",
       liveDemo: "https://my-mortage-calculator.netlify.app/",
-      technologies: [
-        "TypeScript",
-        "Input Validation",
-        "Financial Calculations",
-      ],
+      technologies: "mortgageCalculator.technologies",
     },
     {
       id: 6,
@@ -99,74 +74,42 @@ const projectsData = {
       img: mattematchen,
       repo: "https://github.com/EllenSandqvist/MathleteCamp.git",
       liveDemo: "https://mathletecamp.netlify.app/",
-      technologies: [
-        "JavaScript",
-        "External APIs",
-        "Dynamic UI",
-        "Modular Architecture",
-      ],
+      technologies: "mathleteCamp.technologies",
     },
   ],
   collaborations: [
     {
       id: 1,
-      title: "Rently (uthyrningsplattform)",
-      description:
-        "Plattform byggd i Vue där användare kan hyra och hyra ut föremål. Användaren kan lägga upp föremål för uthyrning samt filtrera, söka och boka andra användares föremål.",
-      midDescription:
-        "Appen är ett skolprojekt där mitt bidrag främst var användarautentisering (registrering, in- och utloggning), att sätta upp store med Pinia och funktionalitet för att lägga upp nya föremål för uthyrning.",
-      detailedDescription:
-        "Appen använder modulära Vue-komponenter med Vue Router för navigering. Funktioner omfattar CRUD-operationer på användare, föremål och bokningar, användarautentisering (registrering, in- och utloggning), samt upplägg av nya föremål för uthyrning. En kalenderfunktion gör det enkelt för användare att välja hyrdatum. Data hanteras via Pinia store och lagras/uppdateras i JSONBin, vilket ger en strukturerad och responsiv lösning med fokus på användarvänlighet.",
+      title: "rently.title",
+      description: "rently.description",
+      midDescription: "rently.midDescription",
+      detailedDescription: "rently.detailedDescription",
       img: rently,
       repo: "https://github.com/EllenSandqvist/Rently",
       liveDemo: "https://rently-app.netlify.app/",
-      technologies: [
-        "Vue.js",
-        "Composition API",
-        "Pinia",
-        "Vue Router",
-        "JSONBin",
-        "User Auth.",
-      ],
+      technologies: "rently.technologies",
     },
     {
       id: 2,
-      title: "Kanban App",
-      description:
-        "Kanban-app i React och Redux för effektiv projektplanering. Användare kan skapa, flytta och hantera uppgifter, sätta deadlines, koppla team-medlemmar m.m.",
-      midDescription:
-        "Appen är ett skolprojekt inspirerat av Trello. Fokus låg på Redux för effektiv state management och återanvändbara komponenter. Projektet innehåller custom hooks för drag-and-drop samt för hantering av aktiv användare och användarinställningar.",
-      detailedDescription:
-        "UI är uppbyggt med modulära React-komponenter som kan återanvändas och enkelt underhållas. Uppgifter kan ges start- och slutdatum, tilldelas till olika användare samt flyttas mellan kolumner med drag-and-drop eller genom menyval. Alla data, inklusive kolumner, uppgifter och användare, hanteras via Redux och sparas i localStorage för att bibehålla användarens information mellan sidladdningar. Appen erbjuder även personliga färginställningar som sparas lokalt för varje användare.",
+      title: "kanbanApp.title",
+      description: "kanbanApp.description",
+      midDescription: "kanbanApp.midDescription",
+      detailedDescription: "kanbanApp.detailedDescription",
       img: kanbanCollab,
       repo: "https://github.com/EllenSandqvist/MathleteCamp.git",
       liveDemo: "https://kanban-kollab.netlify.app/",
-      technologies: [
-        "React",
-        "Redux",
-        "React Router",
-        "Custom Hooks",
-        "CSS Modules",
-      ],
+      technologies: "kanbanApp.technologies",
     },
     {
       id: 3,
-      title: "Quire",
-      description:
-        "Quire är en digital anteckningsbok. Användare kan skapa, redigera och favoritmarkera anteckningar. Appen kan anpassas genom val av färger, typsnitt, textstorlek m.m.",
-      midDescription:
-        "Projektet i VanillaJS har responsiv design och semantisk HTML. Användaren kan formatera anteckningarna med rubriker, punktlistor, kursiv- och fetstil samt lägga in bilder. All data sparas i localStorage och Google Analytics används för grundläggande användarstatistik.",
-      detailedDescription:
-        "Mitt huvudansvar var textformateringen som utvecklades utan deprecated metoder som execCommand. Appen visar en informationssida vid första besöket, har skapandedatum för anteckningar, en utskriftsfunktion som exkluderar menyer och verktygskontroller, samt stöd för sökning bland anteckningar.",
+      title: "quire.title",
+      description: "quire.description",
+      midDescription: "quire.midDescription",
+      detailedDescription: "quire.detailedDescription",
       img: quire,
       repo: "https://github.com/EllenSandqvist/Quire",
       liveDemo: "https://quire-app.netlify.app/",
-      technologies: [
-        "VanillaJS",
-        "Google Analytics",
-        "Text formatting",
-        "LocalStorage",
-      ],
+      technologies: "quire.technologies",
     },
   ],
 };

@@ -46,11 +46,13 @@ const ProjectCard = ({ project, isActive, setActiveProjectId }) => {
               {t(`${project.detailedDescription}`)}
             </p>
             <div className={styles.techContainer}>
-              {project.technologies.map((tech, index) => (
-                <span key={tech + index} className={styles.techChip}>
-                  {tech}
-                </span>
-              ))}
+              {t(`${project.technologies}`, { returnObjects: true }).map(
+                (tech, index) => (
+                  <span key={tech + index} className={styles.techChip}>
+                    {tech}
+                  </span>
+                )
+              )}
             </div>
           </div>
 
