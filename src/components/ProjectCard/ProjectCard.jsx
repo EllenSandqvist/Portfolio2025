@@ -16,6 +16,7 @@ const ProjectCard = ({ project, isActive, setActiveProjectId }) => {
       </div>
       <img
         tabIndex="0"
+        loading="lazy"
         onKeyDown={(e) => {
           if (e.key === "Enter" || e.key === " ") handleActivate();
         }}
