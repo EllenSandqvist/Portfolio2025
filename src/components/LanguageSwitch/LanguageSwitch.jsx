@@ -61,15 +61,16 @@ export const LanguageSwitch = () => {
   };
 
   return (
-    <div ref={ref} className={styles.customSelect}>
-      <div
-        className={styles.selected}
-        onClick={() => setIsActive(!isActive)}
-        role="button"
-        aria-expanded={isActive}
-        tabIndex={0}
-        onKeyDown={(e) => e.key === "Enter" && setIsActive(!isActive)}
-      >
+    <div
+      ref={ref}
+      className={styles.customSelect}
+      onClick={() => setIsActive(!isActive)}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => e.key === "Enter" && setIsActive(!isActive)}
+      aria-label="Language switcher"
+    >
+      <div className={styles.selected} aria-expanded={isActive}>
         {languageOptions[i18n.language]}
         <span className={styles.arrow}>
           {isActive ? <RiArrowUpSLine /> : <RiArrowDownSLine />}

@@ -94,7 +94,7 @@
 
   .headerTitle {
     border-right: 0.1em solid #fff;
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     line-height: 1;
   }
 
@@ -106,8 +106,7 @@
   .navUl {
     display: flex;
     flex-direction: row;
-    /* gap: 2em; */
-    padding-right: 4em;
+    padding-right: 4.6em;
     align-items: center;
     justify-content: space-evenly;
     font-size: 1.2rem;
@@ -139,6 +138,10 @@
 }
 
 @media (min-width: 900px) {
+  .headerTitle {
+    font-size: 2.3rem;
+  }
+
   .navUl {
     gap: 2em;
     justify-content: center;

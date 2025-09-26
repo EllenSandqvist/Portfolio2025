@@ -1,15 +1,16 @@
 .customSelect {
-  background-color: var(--background-color-lightest);
   color: var(--primary-dark);
-  border: 1px solid #ccc;
-  border-radius: 4px;
   font-size: 1rem;
+  padding: 9px 0;
   position: absolute;
   right: 10px;
-  top: 15px;
+  top: 7px;
 }
 
 .selected {
+  background-color: var(--background-color-lightest);
+  border: 1px solid #ccc;
+  border-radius: 4px;
   font-weight: 500;
   position: relative;
   padding: 0px 16px 0px 4px;
@@ -38,6 +39,9 @@
 }
 
 .options {
+  background-color: var(--background-color-lightest);
+  border: 1px solid var(--secondary-grey);
+  border-radius: 4px;
   display: none;
   width: 100px;
   border-top: 1px solid var(--secondary-grey);
@@ -51,9 +55,13 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 0.2em;
+  gap: 0.3em;
   justify-content: start;
-  padding: 1px 6px 0 4px;
+  padding: 9px 6px 9px 4px;
+}
+
+.options li:first-child {
+  border-bottom: 1px solid var(--secondary-grey);
 }
 
 .options li:hover,
