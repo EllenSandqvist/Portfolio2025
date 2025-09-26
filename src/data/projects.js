@@ -23,7 +23,7 @@ const projectsData = {
     },
     {
       id: 2,
-      title: "TicTacToe",
+      title: "tictactoe.title",
       description: "tictactoe.description",
       midDescription: "tictactoe.midDescription",
       detailedDescription: "tictactoe.detailedDescription",
@@ -34,7 +34,7 @@ const projectsData = {
     },
     {
       id: 3,
-      title: "Dashboard",
+      title: "dashboard.title",
       description: "dashboard.description",
       midDescription: "dashboard.midDescription",
       detailedDescription: "dashboard.detailedDescription",
@@ -45,7 +45,7 @@ const projectsData = {
     },
     {
       id: 4,
-      title: "Memory",
+      title: "memory.title",
       description: "memory.description",
       midDescription: "memory.midDescription",
       detailedDescription: "memory.detailedDescription",

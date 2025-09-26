@@ -70,4 +70,6 @@
   font-weight: 500;
   border-radius: 2px;
   cursor: pointer;
+  position: relative;
+  z-index: 10;
 }

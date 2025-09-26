@@ -6,7 +6,7 @@ import uk from "../../assets/united-kingdom.svg";
 import { RiArrowDownSLine, RiArrowUpSLine } from "react-icons/ri";
 
 export const LanguageSwitch = () => {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const [isActive, setIsActive] = useState(false);
   const ref = useRef(null);
 
@@ -56,6 +56,7 @@ export const LanguageSwitch = () => {
 
   const handleLanguageChoice = (language) => {
     if (language === i18n.language) return;
+    // Changes the language and saves chosen language in localStorage via i18next
     i18n.changeLanguage(language);
     setIsActive(false);
   };
